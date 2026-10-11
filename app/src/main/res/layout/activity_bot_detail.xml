@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:background="@color/bg2">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ripple_item_round"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/text1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="14dp">
+
+                <ImageView
+                    android:id="@+id/img_bot_avatar"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/bot_change_photo" />
+
+                <Button
+                    android:id="@+id/btn_bot_photo"
+                    style="@style/TalksyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:textSize="13sp"
+                    android:text="@string/bot_change_photo" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text2"
+                android:textSize="13sp" />
+
+            <TextView
+                style="@style/TalksyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/bot_token_label" />
+
+            <TextView
+                android:id="@+id/txt_token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input"
+                android:padding="14dp"
+                android:fontFamily="monospace"
+                android:textIsSelectable="true"
+                android:textColor="@color/text1"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_reveal_token"
+                    style="@style/TalksyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:textSize="13sp"
+                    android:text="@string/bot_show_token" />
+
+                <Button
+                    android:id="@+id/btn_copy_token"
+                    style="@style/TalksyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:textSize="13sp"
+                    android:text="@string/copy" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_regenerate_token"
+                style="@style/TalksyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/bg3"
+                android:textColor="@color/text1"
+                android:textSize="13sp"
+                android:text="@string/bot_regenerate_token" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/bot_regenerate_token_hint"
+                android:textColor="@color/text3"
+                android:textSize="11sp" />
+
+            <TextView
+                style="@style/TalksyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/bot_name_label" />
+
+            <EditText
+                android:id="@+id/inp_name"
+                style="@style/TalksyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                style="@style/TalksyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/bot_bio_label" />
+
+            <EditText
+                android:id="@+id/inp_bio"
+                style="@style/TalksyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:maxLines="3" />
+
+            <Button
+                android:id="@+id/btn_save_profile"
+                style="@style/TalksyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/save" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    style="@style/TalksyLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:text="@string/bot_response_mode" />
+
+                <Switch
+                    android:id="@+id/switch_bot_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_bot_mode_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text2"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/group_webhook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                style="@style/TalksyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/bot_webhook_label" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/bot_webhook_hint"
+                android:textColor="@color/text2"
+                android:textSize="12sp"
+                android:lineSpacingExtra="2dp" />
+
+            <EditText
+                android:id="@+id/inp_webhook"
+                style="@style/TalksyInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="URL"
+                android:inputType="textUri"
+                android:maxLines="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save_webhook"
+                    style="@style/TalksyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:textSize="13sp"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/btn_clear_webhook"
+                    style="@style/TalksyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:backgroundTint="@color/bg3"
+                    android:textColor="@color/text1"
+                    android:textSize="13sp"
+                    android:text="@string/bot_webhook_clear" />
+            </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group_mini_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/inp_mini_app_name"
+                    style="@style/TalksyInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:hint="@string/mini_app_name_hint"
+                    android:maxLines="1" />
+
+                <EditText
+                    android:id="@+id/inp_mini_app_url"
+                    style="@style/TalksyInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/mini_app_url_hint"
+                    android:inputType="textUri"
+                    android:maxLines="1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_save_mini_app"
+                        style="@style/TalksyButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="6dp"
+                        android:textSize="13sp"
+                        android:text="@string/save" />
+
+                    <Button
+                        android:id="@+id/btn_clear_mini_app"
+                        style="@style/TalksyButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="6dp"
+                        android:backgroundTint="@color/bg3"
+                        android:textColor="@color/text1"
+                        android:textSize="13sp"
+                        android:text="@string/bot_webhook_clear" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/TalksyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/bot_docs_label" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/bot_docs_intro"
+                android:textColor="@color/text2"
+                android:textSize="12sp"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:id="@+id/txt_code_sample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input"
+                android:padding="14dp"
+                android:fontFamily="monospace"
+                android:textIsSelectable="true"
+                android:textColor="@color/text1"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btn_delete_bot"
+                style="@style/TalksyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/err"
+                android:text="@string/bot_delete" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

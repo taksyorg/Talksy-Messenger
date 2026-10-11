@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="6dp"
+        android:background="@color/bg2"
+        android:elevation="2dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ripple_item_round"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/settings"
+            android:textColor="@color/text1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/settings_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout style="@style/SettingsCard">
+                <LinearLayout
+                    android:id="@+id/row_accounts"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_contact_card" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_accounts" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/settings_accounts_sub" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/text3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingsSectionHeader"
+                android:text="@string/settings_section_appearance" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <LinearLayout style="@style/SettingsRow">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_themes" android:tint="@color/tk_icon" />
+                    <TextView
+                        style="@style/SettingsRowTitle"
+                        android:text="@string/settings_theme" />
+                    <Switch
+                        android:id="@+id/switch_theme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout style="@style/SettingsRow">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_premium_star" android:tint="@color/tk_icon" />
+                    <TextView
+                        style="@style/SettingsRowTitle"
+                        android:text="Анимации" />
+                    <Switch
+                        android:id="@+id/switch_animations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout style="@style/SettingsRow">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_mini_app" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/liquid_glass_toggle" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/liquid_glass_toggle_sub" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <Switch
+                        android:id="@+id/switch_liquid_glass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout style="@style/SettingsRow">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_notifications" android:tint="@color/tk_icon" />
+                    <TextView
+                        style="@style/SettingsRowTitle"
+                        android:text="@string/settings_notifications" />
+                    <Switch
+                        android:id="@+id/switch_notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_language"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_language" android:tint="@color/tk_icon" />
+                    <TextView
+                        style="@style/SettingsRowTitle"
+                        android:text="@string/settings_language" />
+                    <TextView
+                        android:id="@+id/txt_language_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingsSectionHeader"
+                android:text="@string/settings_section_chat" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <LinearLayout
+                    android:id="@+id/row_wallpaper"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_photo" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_wallpaper" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/settings_wallpaper_sub" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/txt_wallpaper_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text2" android:textSize="13sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_font_size"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_edit" android:tint="@color/tk_icon" />
+                    <TextView
+                        style="@style/SettingsRowTitle"
+                        android:text="@string/settings_font_size" />
+                    <TextView android:id="@+id/txt_font_size_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text2" android:textSize="13sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_auto_download"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_file_download" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_auto_download" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/settings_auto_download_sub" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView android:id="@+id/txt_auto_download_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text2" android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingsSectionHeader"
+                android:text="@string/settings_section_data" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <LinearLayout
+                    android:id="@+id/row_favorites"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_save" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/favorites_title" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/favorites_sub" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/text3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_applock"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_secure_chat" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/applock_title" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:id="@+id/txt_applock_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/applock_off" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/text3" android:textSize="20sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_account_ttl"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_timer" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/account_ttl_title" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:id="@+id/txt_account_ttl_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/account_ttl_12" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/text3" android:textSize="20sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_storage"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_cloud" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_storage" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/settings_storage_sub" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/text3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_blocked"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_block_user" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_blocked" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/settings_blocked_sub" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/text3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_who_can_write"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_mention" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/privacy_who_can_write" android:textColor="@color/text1" android:textSize="14sp" />
+                        <TextView android:id="@+id/txt_who_can_write_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:textColor="@color/text2" android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/text3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <LinearLayout style="@style/SettingsRow">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_e2e_key" android:tint="@color/tk_icon" />
+                    <TextView
+                        style="@style/SettingsRowTitle"
+                        android:text="@string/settings_e2e" />
+                    <Switch
+                        android:id="@+id/switch_e2e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/SettingsSectionHeader"
+                android:text="@string/settings_section_account" />
+
+            <LinearLayout style="@style/SettingsCard">
+
+                <LinearLayout
+                    android:id="@+id/row_devices"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_devices" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Устройства и входы"
+                            android:textColor="@color/text1"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Список устройств, с которых входили в аккаунт"
+                            android:textColor="@color/text2"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/text3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_bots"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_bot_active" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Боты"
+                            android:textColor="@color/text1"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Создать своего бота или настроить существующего"
+                            android:textColor="@color/text2"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="›"
+                        android:textColor="@color/text3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View style="@style/SettingsDivider" />
+
+                <LinearLayout
+                    android:id="@+id/row_proxy"
+                    style="@style/SettingsRow"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ripple_item">
+                    <ImageView style="@style/SettingsRowIcon" android:padding="7dp" android:src="@drawable/ic_tk_security_check" android:tint="@color/tk_icon" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_proxy"
+                            android:textColor="@color/text1"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/settings_proxy_sub"
+                            android:textColor="@color/text2"
+                            android:textSize="11sp" />
+                        <TextView
+                            android:id="@+id/txt_proxy_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:textColor="@color/accent3"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/txt_server_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="24dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

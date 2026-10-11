@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0C0C10</color>
+    <color name="bg2">#111116</color>
+    <color name="bg3">#17171E</color>
+    <color name="bg4">#1E1E27</color>
+    <color name="s1">#1C1C28</color>
+    <color name="s2">#242433</color>
+    <color name="s3">#2E2E42</color>
+    <color name="border1">#14FFFFFF</color>
+    <color name="border2">#17FFFFFF</color>
+    <color name="border3">#29FFFFFF</color>
+    <color name="accent">#6366F1</color>
+    <color name="accent2">#8B5CF6</color>
+    <color name="accent3">#06B6D4</color>
+    <color name="text1">#F4F4FF</color>
+    <color name="text2">#8888AA</color>
+    <color name="text3">#44445A</color>
+    <color name="ok">#22C55E</color>
+    <color name="err">#F87171</color>
+    <color name="warn">#FB923C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="tk_icon">#FFFFFF</color>
+</resources>

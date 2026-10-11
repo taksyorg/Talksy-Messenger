@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+    <FrameLayout
+        android:id="@+id/frame_media_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_media_image"
+        android:clipToOutline="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_media"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:maxHeight="280dp"
+            android:contentDescription="@null" />
+        <TextView
+            android:id="@+id/txt_video_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_video_badge"
+            android:drawableEnd="@drawable/ic_volume_off_small"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_video_play"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_video_play"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txt_video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:shadowColor="#99000000"
+            android:shadowRadius="4"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_gift"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/img_gift"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:id="@+id/txt_gift_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="@color/text1"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_gift_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="@color/text2"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/btn_gift_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Посмотреть"
+            android:textColor="@color/text1"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_sticker"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_sticker_round"
+        android:clipToOutline="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:contentDescription="@null" />
+
+        <VideoView
+            android:id="@+id/video_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/row_media_file"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_file_card"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_file_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_file"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text1"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="middle" />
+
+            <TextView
+                android:id="@+id/txt_file_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/text2"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.talksy.messenger.ui.widget.SpecialCardView
+        android:id="@+id/special_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_bubble_in"
+        android:visibility="gone" />
+
+    <com.talksy.messenger.ui.widget.VoiceBubbleView
+        android:id="@+id/voice_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_bubble_in"
+        android:visibility="gone" />
+
+    <com.talksy.messenger.ui.widget.RoundVideoView
+        android:id="@+id/round_video"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_bubble_in"
+        android:paddingStart="13dp"
+        android:paddingEnd="13dp"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:textColor="@color/text1"
+        android:textSize="14sp"
+        android:layout_marginEnd="60dp" />
+
+    <TextView
+        android:id="@+id/txt_reactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bg_pill"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/text2"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/container_keyboard"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:visibility="gone" />
+</LinearLayout>

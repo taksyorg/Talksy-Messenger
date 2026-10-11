@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="14dp"
+            android:paddingEnd="10dp"
+            android:background="@color/bg2">
+
+            <View
+                android:layout_width="72dp"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/txt_logo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/logo_text"
+                android:textColor="@color/accent"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04"
+                android:fontFamily="sans-serif-medium" />
+
+            <ImageButton
+                android:id="@+id/btn_profile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_avatar"
+                android:padding="0dp"
+                android:contentDescription="@string/profile" />
+
+            <ImageButton
+                android:id="@+id/btn_settings"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/ripple_item_round"
+                android:src="@drawable/ic_tk_settings"
+                android:tint="@color/tk_icon"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/settings" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stories_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:alpha="0"
+            android:clipChildren="true"
+            android:background="@color/bg2">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:id="@+id/stories_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/border1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_pill"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/inp_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:hint="@string/search_hint"
+                android:textColor="@color/text1"
+                android:textColorHint="@color/text2"
+                android:textSize="13sp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_archive_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            android:layout_marginTop="6dp"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_action_icon_group">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_archive" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="11dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Архив"
+                    android:textColor="@color/text1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_archive_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/text2"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_archive_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="20dp"
+                android:gravity="center"
+                android:background="@drawable/bg_action_icon_chat"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_chats"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:clipToPadding="false"
+            android:paddingBottom="76dp" />
+
+        <LinearLayout
+            android:id="@+id/empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chats_empty_title"
+                android:textColor="@color/text1"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="@string/chats_empty_sub"
+                android:textColor="@color/text2"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_new_chat"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_fab_new_chat"
+        android:src="@drawable/ic_fab_new_chat"
+        android:padding="16dp"
+        android:elevation="6dp"
+        android:contentDescription="@string/new_chat" />
+
+</FrameLayout>

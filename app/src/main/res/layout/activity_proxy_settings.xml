@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="6dp"
+            android:background="@color/bg2">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ripple_item_round"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/proxy_title"
+                android:textColor="@color/text1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView style="@style/TalksyLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proxy_mode" />
+
+            <RadioGroup
+                android:id="@+id/radio_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="14dp">
+
+                <RadioButton android:id="@+id/radio_off" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/proxy_mode_off" android:textColor="@color/text1" android:checked="true" />
+                <RadioButton android:id="@+id/radio_socks5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/proxy_mode_socks5" android:textColor="@color/text1" />
+                <RadioButton android:id="@+id/radio_custom" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/proxy_mode_custom" android:textColor="@color/text1" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/group_fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView style="@style/TalksyLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proxy_host" />
+                <EditText android:id="@+id/inp_host" style="@style/TalksyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" android:hint="proxy.example.com" />
+
+                <TextView style="@style/TalksyLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proxy_port" />
+                <EditText android:id="@+id/inp_port" style="@style/TalksyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" android:inputType="number" android:hint="1080" />
+
+                <TextView android:id="@+id/lbl_user" style="@style/TalksyLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proxy_user" />
+                <EditText android:id="@+id/inp_user" style="@style/TalksyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" />
+
+                <TextView android:id="@+id/lbl_pass" style="@style/TalksyLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proxy_pass" />
+                <EditText android:id="@+id/inp_pass" style="@style/TalksyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" android:inputType="textPassword" />
+
+                <TextView android:id="@+id/lbl_secret" style="@style/TalksyLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/proxy_secret" android:visibility="gone" />
+                <EditText android:id="@+id/inp_secret" style="@style/TalksyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill"
+                android:textColor="@color/text1"
+                android:text="@string/proxy_test"
+                android:layout_marginBottom="10dp" />
+
+            <Button android:id="@+id/btn_save" style="@style/TalksyButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/proxy_save" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/proxy_help"
+                android:textColor="@color/text2"
+                android:textSize="11sp"
+                android:lineSpacingExtra="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

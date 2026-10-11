@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">konuşkan</string>
+    <string name="app_sub">Haberci</string>
+
+    <string name="auth_phone_title">Telefon numaranızı girin</string>
+    <string name="auth_phone_sub">Size SMS yoluyla bir onay kodu göndereceğiz</string>
+    <string name="auth_phone_hint">+1 555 000 0000</string>
+    <string name="auth_continue">Devam etmek</string>
+    <string name="auth_phone_error">Lütfen geçerli bir telefon numarası girin</string>
+
+    <string name="auth_email_title">E-postanızı ekleyin</string>
+    <string name="auth_email_sub">Oturum açma ve hesap kurtarma için gerekli</string>
+    <string name="auth_email_hint">sen@example.com</string>
+    <string name="auth_email_error">Geçerli bir e</string>
+
+    <string name="auth_code_title">Kodu girin</string>
+    <string name="auth_code_sub_phone">%1$s adresine gönderilen kod</string>
+    <string name="auth_code_sub_email">and duplicated to %1$s</string>
+    <string name="auth_code_hint">– – – – – –</string>
+    <string name="auth_code_resend">Kodu yeniden gönder</string>
+    <string name="auth_code_error">Yanlış kod, tekrar deneyin</string>
+    <string name="auth_code_verify">Doğrulamak</string>
+    <string name="auth_dev_hint">Kod (test modu, henüz sunucu yok): %1$s</string>
+
+    <string name="chats_title">Sohbetler</string>
+    <string name="chats_empty_title">Bir sohbet seçin</string>
+    <string name="chats_empty_sub">Veya oluşturma simgesini kullanarak yeni bir görüşme başlatın</string>
+    <string name="search_hint">Aramak</string>
+    <string name="new_chat">Yeni sohbet</string>
+    <string name="settings">Ayarlar</string>
+    <string name="profile">Profil</string>
+
+    <string name="message_hint">Mesaj…</string>
+    <string name="send">Göndermek</string>
+
+    <string name="profile_name">İsim</string>
+    <string name="profile_handle">Kullanıcı adı</string>
+    <string name="profile_bio">Biyografi</string>
+    <string name="profile_phone">Telefon</string>
+    <string name="profile_email">E-posta</string>
+    <string name="save">Kaydetmek</string>
+    <string name="edit">Düzenlemek</string>
+    <string name="logout">Oturumu kapat</string>
+
+    <string name="settings_theme">Koyu tema</string>
+    <string name="settings_language">Uygulama dili</string>
+    <string name="settings_proxy">Proxy ve sansürü aşma</string>
+    <string name="settings_proxy_sub">Configure SOCKS5 or your own obfuscated Talksy proxy</string>
+    <string name="settings_server">Sunucu (arka uç)</string>
+    <string name="settings_server_sub">E-posta kodunu gönderen sunucunun adresi</string>
+    <string name="settings_server_hint">10.0.2.2:5000</string>
+    <string name="settings_server_not_set">Ayarlanmadı</string>
+    <string name="settings_notifications">Bildirimler</string>
+    <string name="settings_about">Hakkında</string>
+
+    <string name="proxy_title">Proxy bağlantısı</string>
+    <string name="proxy_mode">Mod</string>
+    <string name="proxy_mode_off">Kapalı</string>
+    <string name="proxy_mode_socks5">ÇORAP5</string>
+    <string name="proxy_mode_custom">Custom Talksy proxy (obfuscated)</string>
+    <string name="proxy_host">Sunucu adresi</string>
+    <string name="proxy_port">Liman</string>
+    <string name="proxy_user">Kullanıcı adı (isteğe bağlı)</string>
+    <string name="proxy_pass">Şifre (isteğe bağlı)</string>
+    <string name="proxy_secret">Gizli anahtar</string>
+    <string name="proxy_test">Bağlantıyı test edin</string>
+    <string name="proxy_save">Kaydet ve uygula</string>
+    <string name="proxy_ok">Proxy bağlandı</string>
+    <string name="proxy_fail">Bağlantı başarısız oldu</string>
+    <string name="proxy_help">Kendi kendine barındırma talimatları için proje arşivindeki proxy-server/README.md dosyasına bakın.</string>
+
+    <string name="new_chat_hint">Bir ad veya @kullanıcı adı girin</string>
+    <string name="new_chat_empty">Bir kullanıcıyı aramak için yazmaya başlayın</string>
+    <string name="new_chat_none">Kullanıcı bulunamadı</string>
+
+    <string name="backend_not_connected">Sunucu henüz bağlanmadı — yerel modda çalışıyor</string>
+
+    <string name="error_generic">Hata</string>
+    <string name="error_server_connection">Sunucu bağlantı hatası:</string>
+    <string name="error_server_not_configured">Sunucu adresi ayarlanmamış</string>
+
+    <string name="group_setting_change_failed">Ayar değiştirilemedi</string>
+    <string name="group_role_change_failed">Rol değiştirilemedi</string>
+    <string name="group_set_username">@kullanıcı adını ayarla</string>
+    <string name="group_name_title">Grup adı</string>
+    <string name="group_rename_failed">Yeniden adlandırılamadı</string>
+    <string name="group_username_hint">@group_username</string>
+    <string name="group_username_title">Grup kullanıcı adı</string>
+    <string name="group_username_save_failed">Kullanıcı adı kaydedilemedi</string>
+    <string name="uploading_photo">Fotoğraf yükleniyor…</string>
+    <string name="photo_upload_failed">Fotoğraf yüklenemedi</string>
+    <string name="photo_process_error">Fotoğraf işlenirken hata oluştu:</string>
+
+    <string name="msg_send_failed">Gönderilemedi</string>
+    <string name="encryption_error">Şifreleme hatası:</string>
+    <string name="decrypt_failed_short">Şifre çözülemedi</string>
+    <string name="preparing_file">Dosya hazırlanıyor…</string>
+    <string name="file_upload_failed">Dosya yüklenemedi</string>
+    <string name="file_read_error">Dosya okunurken hata oluştu:</string>
+    <string name="group_key_decrypt_failed">Grup anahtarının şifresi çözülemedi</string>
+    <string name="group_admin_only_send">Bu grupta yalnızca yöneticiler paylaşım yapabilir</string>
+    <string name="peer_no_key_yet">Bu kişinin henüz bir şifreleme anahtarı yok; uygulamayı açıp tekrar denemesini isteyin</string>
+
+    <string name="fab_new_chat">Yeni sohbet</string>
+    <string name="fab_new_group">Yeni grup</string>
+    <string name="pubkey_upload_failed">Genel anahtar sunucuya yüklenemedi:</string>
+    <string name="pubkey_not_uploaded">Anahtar sunucuya yüklenmedi</string>
+    <string name="keygen_failed">Şifreleme anahtarı oluşturulamadı</string>
+    <string name="keygen_create_failed">Şifreleme anahtarı oluşturulamadı</string>
+    <string name="ok">TAMAM</string>
+    <string name="chat_unpin">Sabitlemeyi kaldır</string>
+    <string name="chat_pin">Sabitle</string>
+    <string name="chat_archive">Arşiv</string>
+    <string name="notif_enable">Bildirimleri etkinleştir</string>
+    <string name="notif_disable">Bildirimleri devre dışı bırak</string>
+
+    <string name="contacts_in_app_header">CONTACTS ON TALKSY</string>
+    <string name="searching_contacts">Kişiler aranıyor…</string>
+    <string name="no_phone_contacts">Kişilerinizde telefon numarası bulunamadı</string>
+    <string name="no_registered_contacts">None of your contacts are on Talksy yet</string>
+    <string name="grant_contacts_permission">Allow contacts access to see who\'s already on Talksy — or search for someone above</string>
+    <string name="search_results_header">ARAMA SONUÇLARI</string>
+    <string name="server_not_configured_settings">Sunucu yapılandırılmadı (Ayarlar → Sunucu)</string>
+
+    <string name="last_seen_recently">en son yakın zamanda görüldü</string>
+    <string name="last_seen_online">çevrimiçi</string>
+    <string name="last_seen_at_time">last seen at %s</string>
+    <string name="last_seen_yesterday_at">last seen yesterday at %s</string>
+    <string name="last_seen_date_format">d MMM \'at\' SS:dd</string>
+    <string name="last_seen_date_at">son görülme %s</string>
+
+    <string name="profile_save_failed">Kaydedilemedi</string>
+    <string name="image_read_failed">Resim okunamadı</string>
+    <string name="photo_updated">Fotoğraf güncellendi</string>
+
+    <string name="server_not_set_hint">Sunucu ayarlanmadı — yapılandırmak için dokunun</string>
+    <string name="server_label_prefix">Sunucu:</string>
+    <string name="server_address_title">Sunucu adresi</string>
+    <string name="server_address_message">Enter the backend server address. For the emulator: 10.0.2.2:5000. For a real phone on the same Wi-Fi: COMPUTER_IP:5000</string>
+    <string name="digits_suffix">rakam)</string>
+
+    <string name="downloading_file">İndiriliyor "</string>
+    <string name="file_download_failed">Dosya indirilemedi</string>
+    <string name="no_app_to_open_file">Bu dosyayı açacak uygulama bulunamadı</string>
+
+    <string name="my_groups_header">GRUPLARIM</string>
+    <string name="found_header">KURMAK</string>
+    <string name="joined_group_prefix">Gruba katıldınız"</string>
+    <string name="join_group_failed">Gruba katılma başarısız oldu</string>
+
+    <string name="revoke_admin">Yönetici haklarını iptal et</string>
+    <string name="make_admin">Yönetici yap</string>
+    <string name="role_owner">MAL SAHİBİ</string>
+    <string name="role_admin">YÖNETİCİ</string>
+    <string name="no_messages_yet">Henüz mesaj yok</string>
+
+    <string name="notif_channel_name">Konuşkan mesajlar</string>
+    <string name="notif_channel_desc">Talksy sohbetlerindeki yeni mesajlarla ilgili bildirimler</string>
+    <string name="checking_new_messages">Yeni mesajlar kontrol ediliyor</string>
+
+    <string name="file_open_failed">Dosya açılamadı</string>
+    <string name="file_too_big_prefix">Dosya şundan daha büyük:</string>
+    <string name="file_too_big_suffix">MB — henüz desteklenmiyor</string>
+
+    <string name="enter_group_name">Bir grup adı girin</string>
+    <string name="group_create_failed">Grup oluşturulamadı</string>
+    <string name="encryption_setup_error">Şifreleme kurulum hatası:</string>
+
+    <string name="profile_load_failed">Profil yüklenemedi</string>
+    <string name="unblock">Engellemeyi kaldır</string>
+    <string name="block">Engellemek</string>
+
+    <string name="server_not_configured_full">Server is not configured. Go to Settings → Server and enter the backend address (see backend/README.md).</string>
+    <string name="sending_code">Kod gönderiliyor…</string>
+    <string name="code_send_failed">Kod gönderilemedi</string>
+
+    <string name="size_bytes">B</string>
+    <string name="size_kb">%.0f KB</string>
+    <string name="size_mb">%.1f MB</string>
+
+    <string name="proxy_handshake_rejected">Talksy-proxy: sunucu el sıkışmayı reddetti (kod</string>
+    <string name="proxy_encryption_error">Talksy-proxy şifreleme hatası:</string>
+
+    <string name="code_resend_failed">Kod yeniden gönderilemedi</string>
+    <string name="checking">Kontrol ediliyor…</string>
+
+    <string name="unarchive">Arşivden kaldır</string>
+
+    <string name="group_prefix">Grup:</string>
+
+    <string name="location_unknown">Konum bilinmiyor</string>
+
+    <string name="group_make_channel_title">Kanal (aramada gösterilir)</string>
+    <string name="group_make_channel_desc">Etkinleştirildiğinde, grup aramada isme göre bulunabilir; aksi takdirde gruba yalnızca davetle katılabilirsiniz</string>
+    <string name="group_private_title">Özel grup</string>
+    <string name="group_private_desc">Açık olduğunda, bir şekilde bulsa bile hiç kimse gruba katılamaz; yalnızca bir üyenin davetiyle</string>
+
+    <string name="settings_e2e">Uçtan uca şifreleme (E2E)</string>
+    <string name="settings_e2e_desc">Varsayılan olarak mesajlar sunucu tarafından tutulan bir anahtarla şifrelenir; güvenilirdir ancak sunucu teknik olarak bunları okuyabilir. Yalnızca diğer kişinin mesajlarınızın şifresini çözebilmesi için bunu açın; gönderim bazen bir şifreleme anahtarına sahip olana kadar bekleyebilir</string>
+
+    <string name="email_spam_hint">E-posta birkaç dakika içinde ulaşmazsa Spam klasörünüzü kontrol edin</string>
+    <string name="code_sent_wait">Gönderildi (%ds)</string>
+
+    <string name="delete_for_me">Benim için sil</string>
+    <string name="delete_for_everyone">Herkes için sil</string>
+    <string name="delete_for_everyone_confirm">Bu, mesajı sohbetteki herkes için siler ve bunu geri almanın hiçbir yolu yoktur. Yine de silinsin mi?</string>
+    <string name="message_deleted">Mesaj silindi</string>
+
+    <string name="settings_section_appearance">DIŞ GÖRÜNÜŞ</string>
+    <string name="settings_section_security">GÜVENLİK</string>
+    <string name="settings_section_account">HESAP VE AĞ</string>
+
+    <string name="call_incoming">Gelen arama…</string>
+    <string name="call_calling">Arıyorum…</string>
+    <string name="call_connecting">Bağlanıyor…</string>
+    <string name="call_connected">Bağlı</string>
+    <string name="call_connection_lost">Bağlantı kesildi</string>
+    <string name="call_permission_denied">Mikrofon erişimi gerekiyor (ve video görüşmeleri için kamera)</string>
+    <string name="call_failed">Arama başlatılamadı</string>
+    <string name="call_ended_by_peer">Diğer kişi aramayı sonlandırdı</string>
+    <string name="notif_accept">Kabul etmek</string>
+    <string name="notif_decline">Reddetmek</string>
+    <string name="call_channel_name">Aramalar</string>
+    <string name="typing_now">yazarak…</string>
+    <string name="menu_copy_text">Metni kopyala</string>
+    <string name="menu_save_downloads">Save to Downloads</string>
+    <string name="menu_forward">İleri</string>
+    <string name="menu_delete">Silmek</string>
+    <string name="text_copied">Metin kopyalandı</string>
+    <string name="forward_to">Şuraya ilet…</string>
+    <string name="forwarded_ok">İletilen</string>
+    <string name="msg_status_sent">Gönderilmiş</string>
+    <string name="msg_status_read">Okumak</string>
+    <string name="msg_reply">Cevap vermek</string>
+    <string name="msg_edit">Düzenlemek</string>
+    <string name="msg_pin">Sabitle</string>
+    <string name="msg_unpin">Sabitlemeyi kaldır</string>
+    <string name="reply_title">Cevap vermek</string>
+    <string name="edit_title">Mesaj düzenleniyor</string>
+    <string name="pinned_title">Sabitlenmiş mesaj</string>
+    <string name="edited_mark">düzenlendi</string>
+    <string name="reply_original_missing">mesaj</string>
+    <string name="logo_text">konuşkan</string>
+    <string name="upload_progress">%1$s / %2$s MB · %3$d%%</string>
+    <string name="upload_too_big">Dosya çok büyük (maks. %1$d MB)</string>
+    <string name="upload_cancel_confirm">Bu dosyanın gönderilmesi iptal edilsin mi?</string>
+    <string name="upload_cancel_yes">Yüklemeyi iptal et</string>
+    <string name="story_you">Sen</string>
+    <string name="story_photo">Fotoğraf</string>
+    <string name="story_video">Video</string>
+    <string name="story_limit">En fazla 3 hikaye yayınlayabilirsiniz</string>
+    <string name="story_published">Hikaye yayınlandı</string>
+    <string name="story_reply_hint">Cevap vermek…</string>
+    <string name="story_reply_sent">Yanıt gönderildi</string>
+    <string name="story_reply_label">Hikayeye yanıt ver</string>
+    <string name="story_delete_confirm">Bu hikaye silinsin mi?</string>
+    <string name="story_delete_btn">Silmek</string>
+    <string name="story_deleted">Hikaye silindi</string>
+    <string name="story_load_failed">Hikaye yüklenemedi</string>
+    <string name="story_just_now">Şu anda</string>
+    <string name="story_min_ago">%1$d dakika önce</string>
+    <string name="story_hours_ago">%1$d saat önce</string>
+    <string name="story_views_title">Görüntülemeler: %1$d</string>
+    <string name="story_no_views">Henüz görüntüleme yok</string>
+    <string name="who_write_title">Kim bana mesaj gönderebilir?</string>
+    <string name="who_write_all">Herkes</string>
+    <string name="who_write_contacts">Sadece yazdığım kişiler</string>
+    <string name="who_write_nobody">Hiç kimse</string>
+    <string name="who_write_saved">Kaydedildi</string>
+    <string name="who_write_hint">Mesajlar ve aramalar için geçerlidir. İzin verilmeyen kişiler bir bildirim görecektir.</string>
+    <string name="channel_subscribe">Abone</string>
+    <string name="channel_unsubscribe">Abonelikten çık</string>
+    <string name="channel_subscribed">Abone oldunuz</string>
+    <string name="channel_unsubscribed">Aboneliğinizi iptal ettiniz</string>
+    <string name="channel_unsubscribe_confirm">Bu kanal aboneliğiniz iptal edilsin mi?</string>
+    <string name="members_title_count">ÜYELER · %1$d</string>
+    <string name="members_visible_title">Üyeleri herkese göster</string>
+    <string name="members_visible_desc">Kapalıysa kanal üyelerini yalnızca sahip ve yöneticiler görebilir</string>
+    <string name="members_hidden_note">Üye listesi kanal sahibi tarafından gizlendi</string>
+    <string name="notif_reply">Cevap vermek</string>
+    <string name="notif_reply_hint">Mesaj…</string>
+    <string name="notif_reply_sent">Gönderildi: %1$s</string>
+    <string name="notif_reply_failed">Gönderilemedi</string>
+    <string name="notif_hangup">Telefonu kapatmak</string>
+    <string name="call_in_progress">Arama devam ediyor</string>
+    <string name="call_video_in_progress">Video görüşmesi devam ediyor</string>
+    <string name="call_ongoing_channel_name">Devam eden arama</string>
+    <string name="call_go_to_chats">Sohbetlere git</string>
+
+    <string name="cancel">İptal etmek</string>
+    <string name="saved">Kaydedildi</string>
+    <string name="copy">Kopyala</string>
+    <string name="copied">Kopyalandı</string>
+
+    <string name="botfather_greeting">MERHABA! Bu messenger için bir bot oluşturmanıza ve yapılandırmanıza yardımcı olacağım.</string>
+    <string name="botfather_menu_prompt">Ne yapmak istersin?</string>
+    <string name="botfather_btn_create">Bot oluştur</string>
+    <string name="botfather_btn_my_bots">Botlarım</string>
+    <string name="botfather_ask_name">Botun adı ne olmalı? Bu, insanların mesaj gönderdiklerinde görecekleri addır.</string>
+    <string name="botfather_name_too_long">Bu ad çok uzun (en fazla 64 karakter). Daha kısa bir şey deneyin.</string>
+    <string name="botfather_ask_username">Şimdi bot için bir kullanıcı adı seçin: 5-32 karakter, Latin harfleri/rakamları/alt çizgi ve \"bot\" ile bitmelidir (ör. my_cool_bot).</string>
+    <string name="botfather_ask_username_again">Başka bir kullanıcı adı deneyin.</string>
+    <string name="botfather_done">Tamamlamak! \"%1$s\" (%2$s) botu oluşturuldu. İşte jetonu; botunuzun kodunun, bot olarak sunucuyla iletişim kurabilmesi için ona ihtiyacı var. Bunu bir şifre gibi gizli tut.</string>
+    <string name="botfather_copy_token">Jetonu kopyala</string>
+    <string name="botfather_open_settings">Bot ayarları</string>
+    <string name="botfather_what_next">Sırada ne var?</string>
+
+    <string name="my_bots_title">Botlarım</string>
+    <string name="my_bots_empty">Henüz bot yok. BotFather aracılığıyla ilk hesabınızı oluşturmak için \"+\" düğmesine dokunun.</string>
+
+    <string name="bot_token_label">BOT JETONU</string>
+    <string name="bot_show_token">Göstermek</string>
+    <string name="bot_hide_token">Saklamak</string>
+    <string name="bot_regenerate_token">Jetonu yeniden oluştur</string>
+    <string name="bot_regenerate_token_hint">Eski jeton hemen çalışmayı bırakacak; botunuzun kodunu yenisiyle güncellemeniz gerekecek.</string>
+    <string name="bot_regenerate_token_confirm">Eski jeton hemen çalışmayı durduracaktır. Çalıştırdığınız bot kodunun yeni jetonla güncellenmesi gerekecek. Devam etmek?</string>
+    <string name="bot_token_updated">Jeton yeniden oluşturuldu</string>
+
+    <string name="bot_name_label">İSİM</string>
+    <string name="bot_bio_label">TANIM</string>
+    <string name="bot_name_required">Bot için bir ad girin</string>
+
+    <string name="bot_webhook_label">WEBHOOK (isteğe bağlı)</string>
+    <string name="bot_webhook_hint">Varsayılan olarak bot, sunucunun kendisini yoklar (getUpdates) — ayarlanacak bir şey yoktur, genel IP olmasa bile çalışır. Bir web kancasına yalnızca bot kodunuz genel bir https adresinde barındırılıyorsa ve sunucunun mesajları doğrudan bu adrese iletmesini istiyorsanız gereklidir.</string>
+    <string name="bot_webhook_clear">Web kancasını kaldır</string>
+
+    <string name="bot_docs_label">HOW TO CONNECT YOUR BOT</string>
+    <string name="bot_docs_intro">Bot code is written in Python and runs ON YOUR OWN MACHINE — not inside the messenger. Here\'s a minimal working example using getUpdates:</string>
+    <string name="bot_docs_code_sample"><![CDATA[import requests, time
+
+TOKEN = "%1$s"
+BASE = "SERVER/bot" + TOKEN
+
+offset = 0
+while True:
+    r = requests.get(f"{BASE}/getUpdates", params={"offset": offset, "timeout": 25}).json()
+    for upd in r["result"]:
+        offset = upd["update_id"] + 1
+        msg = upd["message"]
+        chat_id = msg["chat"]["id"]
+        text = msg["text"]
+        requests.post(f"{BASE}/sendMessage",
+            json={"chat_id": chat_id, "text": f"You said: {text}"})]]></string>
+
+    <string name="bot_delete">Botu sil</string>
+    <string name="bot_delete_confirm">Bot ve jetonu kalıcı olarak silinecek. Onunla olan sohbet geçmişi kalacak. Devam etmek?</string>
+    <string name="bot_deleted">Bot silindi</string>
+    <string name="bot_chat_subtitle">bot</string>
+    <string name="mention_not_found">Hiçbir şey bulunamadı</string>
+    <string name="blocked_by_peer">Bu kullanıcı kendisine mesaj göndermenize izin vermiyor</string>
+    <string name="bot_add_to_group">Botu gruba ekle</string>
+    <string name="bot_added_to_group">Bot gruba eklendi</string>
+    <string name="add_participant">Katılımcı ekle</string>
+    <string name="member_added">Katılımcı eklendi</string>
+    <string name="pick_group_for_bot">Bir grup seçin</string>
+    <string name="bot_mode_webhook">Web kancası</string>
+    <string name="bot_mode_mini_app">Mini Uygulama</string>
+    <string name="bot_response_mode">Bot nasıl yanıt veriyor?</string>
+    <string name="mini_app_url_hint">your-miniapp.example</string>
+    <string name="mini_app_name_hint">Mini Uygulama adı</string>
+    <string name="open_bot_mini_app">Mini Uygulamayı Aç</string>
+    <string name="privacy_section_title">Mahremiyet</string>
+    <string name="privacy_who_can_write">Kim bana mesaj gönderebilir?</string>
+    <string name="liquid_glass_toggle">Sıvı Cam</string>
+    <string name="liquid_glass_toggle_sub">iOS/Telegram tarzı cam arayüz</string>
+    <string name="switch_account_title">Hesaplar</string>
+    <string name="add_account">Hesap ekle</string>
+    <string name="max_accounts_hint">Aynı anda en fazla %d hesabını tutabilirsiniz</string>
+    <string name="account_switched">Hesap değiştirildi</string>
+    <string name="settings_accounts">Hesaplar</string>
+    <string name="settings_accounts_sub">Up to 3 accounts, quick switching</string>
+    <string name="spoiler_menu_item">Spoiler olarak gizle</string>
+    <string name="spoiler_hint">Ortaya çıkarmak için dokunun</string>
+    <string name="video_speed">Hız</string>
+    <string name="video_quality">Kalite</string>
+    <string name="video_quality_auto">Otomatik</string>
+    <string name="video_quality_high">Yüksek</string>
+    <string name="video_quality_medium">Orta (veri tasarrufu)</string>
+    <string name="send_blurred">Bulanık gönder</string>
+    <string name="media_picker_title">Fotoğraflar ve videolar</string>
+    <string name="media_picker_recents">Son</string>
+    <string name="media_picker_permission">Galeri erişimine izin ver</string>
+    <string name="media_picker_empty">Hiçbir şey bulunamadı</string>
+    <string name="video_loading_percent">%d%%</string>
+
+    <string name="logout_confirm">Bu cihazdaki oturumunuz kapatılsın mı?</string>
+
+    <string name="settings_section_chat">SOHBETLER VE MEDYA</string>
+    <string name="settings_wallpaper">Sohbet duvar kağıdı</string>
+    <string name="settings_wallpaper_sub">Sohbetler için arka plan rengi veya kendi fotoğrafınız</string>
+    <string name="settings_font_size">Yazı tipi boyutu</string>
+    <string name="settings_auto_download">Medyayı otomatik indir</string>
+    <string name="settings_auto_download_sub">Sohbetlerde fotoğraf ve videolar ne zaman indirilmeli?</string>
+
+    <string name="settings_section_data">VERİ</string>
+    <string name="settings_storage">Depolamak</string>
+    <string name="settings_storage_sub">Önbellek boyutu, indirilen dosyaları temizle</string>
+    <string name="settings_blocked">Engellenen kullanıcılar</string>
+    <string name="settings_blocked_sub">Engellediğiniz kişiler</string>
+
+    <string name="wallpaper_default">Varsayılan</string>
+    <string name="wallpaper_custom">Fotoğrafınız</string>
+    <string name="wallpaper_indigo">Çivit mavisi</string>
+    <string name="wallpaper_sunset">Gün batımı</string>
+    <string name="wallpaper_ocean">Okyanus</string>
+    <string name="wallpaper_forest">Orman</string>
+    <string name="wallpaper_rose">Gül</string>
+    <string name="wallpaper_midnight">Gece yarısı</string>
+    <string name="wallpaper_saved">Duvar kağıdı kaydedildi</string>
+
+    <string name="font_size_small">Küçük</string>
+    <string name="font_size_medium">Varsayılan</string>
+    <string name="font_size_large">Büyük</string>
+
+    <string name="auto_download_wifi">Yalnızca Wi-Fi</string>
+    <string name="auto_download_always">Her zaman</string>
+    <string name="auto_download_never">Asla</string>
+
+    <string name="storage_cache_desc">İndirilen fotoğraflar, videolar ve dosyalar tarafından kullanılır</string>
+    <string name="storage_clear_cache">Önbelleği temizle</string>
+    <string name="storage_clear_cache_hint">Dosyalar bu cihazdan kaldırılacak ancak sohbetlerde kullanılabilir durumda kalacak; gerekirse yeniden indirilecekler.</string>
+    <string name="storage_cache_cleared">Önbellek temizlendi</string>
+
+    <string name="blocked_empty">Engellenen kullanıcı yok</string>
+    <string name="blocked_unblock_confirm">Bu kullanıcının engellemesi kaldırılsın mı? Size mesaj gönderebilecek ve profilinizi tekrar görebilecekler.</string>
+
+    <string name="profile_stories">HİKAYELER</string>
+    <string name="profile_stories_view">Görüş</string>
+    <string name="profile_media">MEDYA</string>
+    <string name="profile_gifts">Hediyeler</string>
+    <string name="profile_gifts_sub">Sohbette birbirinize hediyeler gönderin</string>
+    <string name="profile_gifts_toast">Gifts are coming soon to Talksy</string>
+    <string name="profile_soon">YAKINDA</string>
+
+    <string name="miniapp_invalid">Bu botun Mini Uygulaması yok</string>
+    <string name="miniapp_default_title">Mini Uygulama</string>
+    <string name="miniapp_load_error">Mini Uygulama (%1$s) yüklenemedi. Bağlantınızı kontrol edip tekrar deneyin.</string>
+    <string name="miniapp_open">Açık</string>
+    <string name="bot_start">Başlangıç</string>
+    <plurals name="bot_users_count">
+        <item quantity="one">%d kullanıcısı</item>
+        <item quantity="other">%d kullanıcıları</item>
+    </plurals>
+    <string name="attach_gallery">Galeri</string>
+    <string name="attach_file">Dosya</string>
+    <string name="attach_send_plain">Göndermek</string>
+
+    <string name="connecting">Bağlanıyor</string>
+    <string name="connecting_lower">bağlanıyor</string>
+    <string name="no_connection">Bağlantı yok</string>
+    <string name="needs_internet">İnternet bağlantısı gerekli</string>
+    <string name="reaction_wait_sent">Mesaj gönderildikten sonra tepki verebilirsiniz</string>
+    <string name="group_subtitle">grup</string>
+    <string name="channel_subtitle">kanal</string>
+
+    <string name="record_voice">Sesli mesaj</string>
+    <string name="record_round">Video mesajı</string>
+    <string name="mode_voice_hint">Sesli mesaj kaydetmek için basılı tutun</string>
+    <string name="mode_round_hint">Video mesajı kaydetmek için basılı tutun</string>
+    <string name="record_slide_cancel">‹ İptal etmek için sola kaydırın</string>
+    <string name="record_release_cancel">İptal etmek için bırakın</string>
+    <string name="record_up_to_lock">Kaydı sürdürmek için yukarı kaydırın</string>
+    <string name="record_too_short">Kayıt çok kısa</string>
+    <string name="record_failed">Kayıt başlatılamadı</string>
+    <string name="record_hold_again">Şimdi düğmeyi tekrar basılı tutun</string>
+    <string name="cancel_caps">İPTAL ETMEK</string>
+    <string name="voice_load_failed">Sesli mesaj yüklenemedi</string>
+    <string name="msg_type_voice">Sesli mesaj</string>
+    <string name="msg_type_round">Video mesajı</string>
+    <string name="close">Kapalı</string>
+    <string name="more">Daha</string>
+    <string name="miniapp_minimize">Küçült</string>
+    <string name="link_open_in_browser">Tarayıcıda aç</string>
+    <string name="link_copy">Bağlantıyı kopyala</string>
+    <string name="link_copied">Bağlantı kopyalandı</string>
+    <string name="link_share">Paylaşmak</string>
+    <string name="link_reload">Yeniden yükle</string>
+    <string name="link_load_error">Sayfa yüklenemedi (%1$s)</string>
+    <string name="link_blocked">Bu bağlantı açılamıyor</string>
+    <string name="miniapp_return">Mini uygulamaya dön</string>
+    <string name="miniapp_system_badge">Sistem uygulaması</string>
+    <string name="settings_links_in_app">Bağlantıları uygulamada açın</string>
+    <string name="settings_links_in_app_sub">Off — links open in your main browser. System mini apps always open inside Talksy.</string>
+    <string name="nav_chats">Sohbetler</string>
+    <string name="nav_contacts">Kişiler</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="nav_profile">Profil</string>
+    <string name="settings_privacy">Mahremiyet</string>
+    <string name="settings_privacy_sub">Verilerinizi kim görebilir ve size yazabilir?</string>
+    <string name="priv_phone">Telefon numarası</string>
+    <string name="priv_username">Kullanıcı adı</string>
+    <string name="priv_last_seen">Son görülme</string>
+    <string name="priv_photo">Profil fotoğrafları</string>
+    <string name="priv_bio">Hakkında</string>
+    <string name="priv_messages">Mesajlar</string>
+    <string name="priv_group_invites">Gruplar ve kanallar</string>
+    <string name="priv_calls">Aramalar</string>
+    <string name="priv_voice">Sesli ve görüntülü mesajlar</string>
+    <string name="priv_everybody">Herkes</string>
+    <string name="priv_contacts">Kişilerim</string>
+    <string name="priv_nobody">Hiç kimse</string>
+    <string name="priv_group_invites_note">Sizi gruplara eklemeyi yasaklarsanız, insanlar bunun yerine size davetiye gönderecektir; katılıp katılmayacağınıza siz karar verirsiniz.</string>
+    <string name="priv_invites">Grup davetiyeleri</string>
+    <string name="priv_invites_sub">Sizi doğrudan ekleyemeyen kişilerden gelen davetiyeler</string>
+    <string name="invites_empty">Davetiye yok</string>
+    <string name="invites_banner">Grup davetiyeleri: %1$d</string>
+    <string name="invite_accept">Kabul etmek</string>
+    <string name="invite_decline">Reddetmek</string>
+    <string name="invite_accepted">Gruba katıldınız</string>
+    <string name="invite_group_from">%1$s · %2$d üyeleri tarafından davet edildi</string>
+    <string name="invite_channel_from">%1$s · %2$d aboneleri tarafından davet edildi</string>
+    <string name="pub_tab">Gönderiler</string>
+    <string name="pub_archive_tab">Arşivi yayınla</string>
+    <string name="pub_empty">Henüz gönderi yok</string>
+    <string name="pub_empty_sub">Paylaştığınız fotoğraf ve videolar burada görünecek.</string>
+    <string name="pub_archive_empty">Arşiv boş</string>
+    <string name="pub_archive_empty_sub">Süresi dolmuş hikayeleri profilinizde yayınlamadığınız sürece yalnızca siz görebilirsiniz.</string>
+    <string name="pub_add">Eklemek</string>
+    <string name="pub_delete_title">Arşivden silinsin mi?</string>
+    <string name="pub_delete_msg">Gönderi kalıcı olarak silinecek.</string>
+    <string name="storage_title">Depolama kullanımı</string>
+    <string name="storage_sub">Talksy cihazınızda bu kadar yer kullanıyor</string>
+    <string name="storage_clear_all">Önbelleği temizle %1$s</string>
+    <string name="storage_clear">Temizlemek</string>
+    <string name="storage_clear_cat">Silinecek: %1$s</string>
+    <string name="storage_clear_title">Önbellek temizlensin mi?</string>
+    <string name="storage_clear_msg">Dosyalar sunucuda kalır; gerektiğinde bunları tekrar indirebilirsiniz.</string>
+    <string name="storage_cloud_note">Tüm medya Talksy bulutunda kalır, istediğiniz zaman tekrar indirebilirsiniz.</string>
+    <string name="storage_auto_title">Önbelleğe alınmış medyayı otomatik olarak sil</string>
+    <string name="storage_ttl">Şunun için önbelleği sakla:</string>
+    <string name="storage_max">Maksimum önbellek boyutu</string>
+    <string name="storage_unlimited">Sınırsız</string>
+    <string name="storage_auto_note">Bu süre boyunca açmadığınız dosyalar veya limit aşıldığında en eski dosyalar cihazdan kaldırılacaktır.</string>
+    <string name="ttl_1d">1 gün</string>
+    <string name="ttl_1w">1 hafta</string>
+    <string name="ttl_1m">1 ay</string>
+    <string name="ttl_3m">3 ay</string>
+    <string name="ttl_never">Asla</string>
+    <string name="cat_video">Video</string>
+    <string name="cat_files">Dosyalar</string>
+    <string name="cat_photo">Fotoğraflar</string>
+    <string name="cat_voice">Sesli mesajlar</string>
+    <string name="cat_stickers">Çıkartmalar ve emojiler</string>
+    <string name="cat_other">Diğer</string>
+    <string name="cat_messages">Mesajlar</string>
+    <string name="data_title">Veri kullanımı</string>
+    <string name="data_title_sub">Ne kadar gönderildi ve alındı?</string>
+    <string name="net_all">Tüm</string>
+    <string name="net_mobile">Mobil</string>
+    <string name="net_wifi">Wifi</string>
+    <string name="net_roaming">Roaming</string>
+    <string name="data_since">Statistics since %1$s</string>
+    <string name="data_tap_hint">Ayrıntıları görmek için bir satıra dokunun.</string>
+    <string name="data_total">Toplam trafik</string>
+    <string name="data_sent">Gönderilmiş</string>
+    <string name="data_received">Kabul edilmiş</string>
+    <string name="data_note">Uygulamanın kendi trafiğini sayar: mesajlar, fotoğraflar, videolar, dosyalar ve sesli mesajlar.</string>
+    <string name="data_auto_hint">Mobil verileri kaydetmek için değişiklik yapın</string>
+    <string name="data_reset">İstatistikleri sıfırla</string>
+    <string name="data_reset_msg">Trafik sayaçları sıfırlanacak.</string>
+    <string name="data_sent_received">Gönderilen: %1$s · alınan: %2$s</string>
+    <string name="delete">Silmek</string>
+    <string name="devices_title">Cihazlar</string>
+    <string name="devices_this">Bu cihaz</string>
+    <string name="devices_active">Aktif oturumlar</string>
+    <string name="devices_end_others">Diğer tüm oturumları sonlandır</string>
+    <string name="devices_end_others_note">Bunun dışındaki tüm cihazlardan çıkış yapın.</string>
+    <string name="devices_end_others_confirm">Diğer tüm cihazlardan çıkış yapılacaktır. Bir e-posta koduyla tekrar oturum açabilirsiniz.</string>
+    <string name="devices_end_session">Oturumu sonlandır</string>
+    <string name="devices_active_note">You can sign in to Talksy on other devices — all active sessions are listed here. Tap a session to change its settings.</string>
+    <string name="devices_none">Başka aktif oturum yok.</string>
+    <string name="devices_auto_title">Oturumları otomatik olarak sonlandır</string>
+    <string name="devices_auto_if">için aktif değilse</string>
+    <string name="devices_auto_note">Bir cihazı bu süreden daha uzun süre kullanmadıysanız oturumu otomatik olarak sonlandırılacaktır.</string>
+    <string name="devices_1w">1 hafta.</string>
+    <string name="devices_1m">1 ay.</string>
+    <string name="devices_3m">3 ay.</string>
+    <string name="devices_6m">6 ay.</string>
+    <string name="devices_1y">1 yıl</string>
+    <string name="devices_online">çevrimiçi</string>
+    <string name="devices_today_at">today at %1$s</string>
+    <string name="devices_yesterday_at">yesterday at %1$s</string>
+    <string name="devices_app">Başvuru</string>
+    <string name="devices_geo">IP adresine göre konum</string>
+    <string name="devices_accept_secret">Gizli sohbetleri kabul et</string>
+    <string name="devices_accept_secret_sub">Bu cihazı gizli (E2E) sohbetler için kullanın</string>
+    <string name="devices_accept_calls">Aramaları kabul et</string>
+    <string name="devices_accept_calls_sub">Aramalar için bu cihazı kullanın</string>
+    <string name="priv_archive">Yayın arşivi</string>
+    <string name="pub_archive_hidden">Bu kullanıcı yayın arşivini gizledi</string>
+    <string name="pub_empty_other">Bu kişinin paylaştığı fotoğraf ve videolar burada görünecek.</string>
+    <string name="pub_archive_empty_other">Bu kişinin daha eski bir yayını yok.</string>
+
+    <string name="account_ttl_12">12 ay hareketsizlikten sonra</string>
+    <string name="account_ttl_24">24 ay hareketsizlikten sonra</string>
+    <string name="account_ttl_6">6 ay hareketsizlikten sonra</string>
+    <string name="account_ttl_title">Otomatik hesap silme</string>
+    <string name="applock_change_pin">Change PIN</string>
+    <string name="applock_disable">Kilidi devre dışı bırak</string>
+    <string name="applock_disable_biometric">Biyometriyi devre dışı bırak</string>
+    <string name="applock_disabled">Kilit devre dışı bırakıldı</string>
+    <string name="applock_enable_biometric">Biyometriyi etkinleştir</string>
+    <string name="applock_off">Kapalı</string>
+    <string name="applock_pin_bio">PIN ve biyometri</string>
+    <string name="applock_pin_only">Yalnızca PIN</string>
+    <string name="applock_set_pin">PIN belirle</string>
+    <string name="applock_title">PIN ve biyometri</string>
+    <string name="attach_contact">Kişi</string>
+    <string name="attach_empty">Burada henüz fotoğraf veya video yok</string>
+    <string name="attach_location">Konum</string>
+    <string name="attach_music">Müzik</string>
+    <string name="attach_permission_btn">Erişime izin ver</string>
+    <string name="attach_permission_hint">Fotoğraf ve videolarınızı göstermek için galeri erişimi gerekiyor</string>
+    <string name="attach_poll">Anket</string>
+    <string name="attach_soon">Yakında</string>
+    <string name="attach_wallet">Cüzdan</string>
+    <string name="chat_delete">Sohbeti sil</string>
+    <string name="chat_delete_for_everyone">Herkesten sil</string>
+    <string name="chat_delete_for_me">Benim için sil</string>
+    <string name="chat_you_label">Siz</string>
+    <string name="draft_label">Taslak:</string>
+    <string name="favorite_added">Favorilere eklendi</string>
+    <string name="favorite_removed">Favorilerden kaldırıldı</string>
+    <string name="favorites_empty">Burada henüz bir şey yok.\nBir mesaj seçin ve “Favorilere ekle”ye dokunun</string>
+    <string name="favorites_remove">Kaldır</string>
+    <string name="favorites_remove_confirm">Mesaj favorilerden kaldırılsın mı?</string>
+    <string name="favorites_sub">Kayıtlı mesajlar</string>
+    <string name="favorites_title">Favoriler</string>
+    <string name="language_title">Dil</string>
+    <string name="lock_biometric_title">Talksy kilidini aç</string>
+    <string name="lock_create_pin">PIN oluşturun</string>
+    <string name="lock_enter_pin">Enter PIN</string>
+    <string name="lock_mismatch">PINs do not match, try again</string>
+    <string name="lock_repeat_pin">Repeat PIN</string>
+    <string name="lock_setup_hint">6 hane</string>
+    <string name="lock_too_many">Çok fazla deneme. %1$d sn sonra tekrar deneyin</string>
+    <string name="lock_use_pin">Enter PIN</string>
+    <string name="lock_wrong_pin">Yanlış PIN</string>
+    <string name="menu_favorite">Favorilere ekle</string>
+    <string name="menu_unfavorite">Favorilerden kaldır</string>
+    <string name="send_disappearing">Kaybolan mesajlar</string>
+    <string name="send_schedule">Daha sonra gönder</string>
+    <string name="send_schedule_done">Mesaj seçilen zamanda gönderilecek</string>
+    <string name="send_schedule_past">Gelecekte bir zaman seçin</string>
+    <string name="session_terminate_confirm">Bu cihazdaki oturum sonlandırılsın mı?</string>
+    <string name="sticker_gif_soon">GIF — yakında</string>
+    <string name="sticker_no_packs">Henüz çıkartma paketi yok.\nKendi paketinizi oluşturmak için ＋ düğmesine dokunun</string>
+    <string name="sticker_tab_emoji">Emoji</string>
+    <string name="sticker_tab_gif">GIF</string>
+    <string name="sticker_tab_stickers">Çıkartmalar</string>
+    <string name="ttl_day">1 gün</string>
+    <string name="ttl_hour">1 saat</string>
+    <string name="ttl_month">30 gün</string>
+    <string name="ttl_off">Kapalı</string>
+    <string name="ttl_saved">Ayar kaydedildi</string>
+    <string name="ttl_week">1 hafta</string>
+</resources>

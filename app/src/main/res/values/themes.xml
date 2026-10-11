@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Talksy" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent3</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:textColorPrimary">@color/text1</item>
+        <item name="android:textColorSecondary">@color/text2</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="alertDialogTheme">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTheme">@style/MaterialAlertDialog.App</item>
+        <item name="android:windowAnimationStyle">@style/Talksy.Dialog.WindowAnimation</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/Talksy.Dialog.ShapeOverlay</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Talksy.Dialog.Title</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/Talksy.Dialog.Body</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Talksy.Dialog.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Talksy.Dialog.Button.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Talksy.Dialog.Button.Negative</item>
+        <item name="android:background">@color/bg2</item>
+        <item name="android:windowBackground">@color/bg2</item>
+    </style>
+
+    <style name="Talksy.Dialog.ShapeOverlay" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="Talksy.Dialog.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/text1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Talksy.Dialog.Body" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/text2</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Talksy.Dialog.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+
+    <style name="Talksy.Dialog.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/text2</item>
+    </style>
+
+    <style name="Talksy.Dialog.WindowAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_pop_out</item>
+    </style>
+
+    <style name="Theme.Talksy.Splash">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+    </style>
+
+    <style name="TalksyInput">
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:textColor">@color/text1</item>
+        <item name="android:textColorHint">@color/text3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TalksyButton">
+        <item name="android:background">@drawable/bg_btn_gradient</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="TalksyLabel">
+        <item name="android:textColor">@color/text2</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="SettingsSectionHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:textColor">@color/text2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="SettingsCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_panel</item>
+    </style>
+
+    <style name="SettingsRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="SettingsRowIcon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:background">@drawable/bg_icon_circle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SettingsRowTitle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text1</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SettingsDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">56dp</item>
+        <item name="android:background">@color/border1</item>
+    </style>
+</resources>

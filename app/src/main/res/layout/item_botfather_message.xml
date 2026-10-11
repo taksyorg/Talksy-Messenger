@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="4dp">
+
+    <LinearLayout
+        android:id="@+id/bubble_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
+            android:maxWidth="280dp"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp"
+            android:background="@drawable/bg_bubble_in"
+            android:textColor="@color/text1" />
+
+        <LinearLayout
+            android:id="@+id/buttons_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

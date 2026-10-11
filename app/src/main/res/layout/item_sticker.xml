@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/img_sticker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/txt_video_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text=""
+        android:drawableStart="@drawable/ic_tk_play_sm"
+        android:drawableTint="@color/white"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+</FrameLayout>

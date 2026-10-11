@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL"/>
+
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+
+    <application
+        android:name=".TalksyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Talksy"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Talksy.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".auth.PhoneActivity" android:exported="false" />
+        <activity android:name=".auth.EmailActivity" android:exported="false" />
+        <activity android:name=".auth.CodeActivity" android:exported="false" />
+        <activity android:name=".auth.CreateProfileActivity" android:exported="false" />
+
+        <activity android:name=".ui.ChatsActivity" android:exported="false" />
+        <activity android:name=".ui.ChatActivity" android:windowSoftInputMode="adjustResize" android:exported="false" />
+        <activity android:name=".ui.ProfileActivity" android:exported="false" />
+        <activity android:name=".ui.SettingsActivity" android:exported="false" />
+        <activity android:name=".ui.NewChatActivity" android:exported="false" />
+        <activity android:name=".ui.ProxySettingsActivity" android:exported="false" />
+        <activity android:name=".ui.DevicesActivity" android:exported="false" />
+        <activity android:name=".ui.StorageActivity" android:exported="false" />
+        <activity android:name=".ui.BlockedUsersActivity" android:exported="false" />
+        <activity android:name=".ui.SupportActivity" android:exported="false" />
+        <activity android:name=".ui.ExperimentsActivity" android:exported="false" />
+        <activity android:name=".ui.MiniAppActivity" android:exported="false" android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="${MAPS_API_KEY}" />
+
+        <activity android:name=".ui.InvitesActivity" android:exported="false" />
+        <activity android:name=".ui.LocationPickerActivity" android:exported="false" />
+        <activity android:name=".ui.LocationViewActivity" android:exported="false" />
+        <activity android:name=".ui.ContactPickerActivity" android:exported="false" />
+        <activity android:name=".ui.ArticleEditorActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.ArticleViewActivity" android:exported="false" />
+        <activity android:name=".ui.DataUsageActivity" android:exported="false" />
+        <activity android:name=".ui.InAppBrowserActivity" android:exported="false" android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".ui.BotFatherActivity" android:exported="false" />
+        <activity android:name=".ui.MyBotsActivity" android:exported="false" />
+        <activity android:name=".ui.BotDetailActivity" android:exported="false" />
+        <activity android:name=".ui.MyGroupsActivity" android:exported="false" />
+        <activity android:name=".ui.CreateGroupActivity" android:exported="false" />
+        <activity android:name=".ui.GroupChatActivity" android:windowSoftInputMode="adjustResize" android:exported="false" />
+        <activity android:name=".ui.CommentsActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.GroupInfoActivity" android:exported="false" />
+        <activity android:name=".ui.UserProfileActivity" android:exported="false" />
+        <activity android:name=".ui.WalletActivity" android:exported="false" />
+        <activity android:name=".ui.NumberShopActivity" android:exported="false" />
+        <activity android:name=".ui.NumberSellActivity" android:exported="false" />
+        <activity android:name=".ui.SecurityActivity" android:exported="false" />
+        <activity android:name=".ui.MyGiftsActivity" android:exported="false" />
+        <activity android:name=".ui.PaymentsActivity" android:exported="false" />
+        <activity android:name=".ui.PayWebActivity" android:exported="false" android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".auth.PhoneVerifyActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".auth.NumberLoginActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.StoreActivity" android:exported="false" />
+        <activity android:name=".ui.PremiumActivity" android:exported="false" />
+        <activity android:name=".ui.GiftShopActivity" android:exported="false" />
+        <activity android:name=".ui.ArchivedActivity" android:exported="false" />
+        <activity android:name=".ui.FavoritesActivity" android:exported="false" />
+        <activity android:name=".ui.CallActivity" android:exported="false"
+            android:excludeFromRecents="false"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.FullscreenImageActivity" android:exported="false"
+            android:theme="@style/Theme.Talksy" />
+        <activity android:name=".ui.StoryViewerActivity" android:exported="false"
+            android:theme="@style/Theme.Talksy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name=".net.MessagePollService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <service
+            android:name=".calls.CallService"
+            android:exported="false"
+            android:foregroundServiceType="phoneCall" />
+
+        <service
+            android:name=".sync.TalksyFcmService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".calls.CallHangupReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".net.QuickReplyReceiver"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+            <activity android:name=".stickers.StickerCreateActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".stickers.StickerPickerActivity" android:exported="false" />
+        <activity android:name=".ui.MediaPickerActivity" android:exported="false" />
+        <activity android:name=".ui.VideoPlayerActivity" android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+    <activity
+            android:name=".ui.LockActivity"
+            android:exported="false" />
+</application>
+</manifest>

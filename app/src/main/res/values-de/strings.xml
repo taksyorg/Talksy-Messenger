@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Talksy</string>
+    <string name="app_sub">Bote</string>
+
+    <string name="auth_phone_title">Geben Sie Ihre Telefonnummer ein</string>
+    <string name="auth_phone_sub">Wir senden Ihnen einen Bestätigungscode per SMS</string>
+    <string name="auth_phone_hint">+1 555 000 0000</string>
+    <string name="auth_continue">Weitermachen</string>
+    <string name="auth_phone_error">Bitte geben Sie eine gültige Telefonnummer ein</string>
+
+    <string name="auth_email_title">Fügen Sie Ihre E-Mail hinzu</string>
+    <string name="auth_email_sub">Wird für die Anmeldung und Kontowiederherstellung benötigt</string>
+    <string name="auth_email_hint">you@example.com</string>
+    <string name="auth_email_error">Bitte geben Sie eine gültige E-Mail-Adresse ein</string>
+
+    <string name="auth_code_title">Code eingeben</string>
+    <string name="auth_code_sub_phone">Code an %1$s gesendet</string>
+    <string name="auth_code_sub_email">und nach %1$s dupliziert</string>
+    <string name="auth_code_hint">– – – – – –</string>
+    <string name="auth_code_resend">Code erneut senden</string>
+    <string name="auth_code_error">Falscher Code, versuchen Sie es erneut</string>
+    <string name="auth_code_verify">Verifizieren</string>
+    <string name="auth_dev_hint">Code (Testmodus, noch kein Server): %1$s</string>
+
+    <string name="chats_title">Chats</string>
+    <string name="chats_empty_title">Wählen Sie einen Chat aus</string>
+    <string name="chats_empty_sub">Oder starten Sie eine neue Konversation über das Verfassen-Symbol</string>
+    <string name="search_hint">Suchen</string>
+    <string name="new_chat">Neuer Chat</string>
+    <string name="settings">Einstellungen</string>
+    <string name="profile">Profil</string>
+
+    <string name="message_hint">Nachricht…</string>
+    <string name="send">Schicken</string>
+
+    <string name="profile_name">Name</string>
+    <string name="profile_handle">Benutzername</string>
+    <string name="profile_bio">Bio</string>
+    <string name="profile_phone">Telefon</string>
+    <string name="profile_email">E-Mail</string>
+    <string name="save">Speichern</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="logout">Abmelden</string>
+
+    <string name="settings_theme">Dunkles Thema</string>
+    <string name="settings_language">App-Sprache</string>
+    <string name="settings_proxy">Proxy- und Zensurumgehung</string>
+    <string name="settings_proxy_sub">Konfigurieren Sie SOCKS5 oder Ihren eigenen verschleierten Talksy-Proxy</string>
+    <string name="settings_server">Server (Backend)</string>
+    <string name="settings_server_sub">Adresse des Servers, der den E-Mail-Code tatsächlich sendet</string>
+    <string name="settings_server_hint">10.0.2.2:5000</string>
+    <string name="settings_server_not_set">Nicht festgelegt</string>
+    <string name="settings_notifications">Benachrichtigungen</string>
+    <string name="settings_about">Um</string>
+
+    <string name="proxy_title">Proxy-Verbindung</string>
+    <string name="proxy_mode">Modus</string>
+    <string name="proxy_mode_off">Aus</string>
+    <string name="proxy_mode_socks5">SOCKEN5</string>
+    <string name="proxy_mode_custom">Benutzerdefinierter Talksy-Proxy (verschleiert)</string>
+    <string name="proxy_host">Serveradresse</string>
+    <string name="proxy_port">Hafen</string>
+    <string name="proxy_user">Benutzername (optional)</string>
+    <string name="proxy_pass">Passwort (optional)</string>
+    <string name="proxy_secret">Geheimer Schlüssel</string>
+    <string name="proxy_test">Testverbindung</string>
+    <string name="proxy_save">Speichern und bewerben</string>
+    <string name="proxy_ok">Proxy verbunden</string>
+    <string name="proxy_fail">Verbindung fehlgeschlagen</string>
+    <string name="proxy_help">Anweisungen zum Selbsthosten finden Sie unter „proxy-server/README.md“ im Projektarchiv.</string>
+
+    <string name="new_chat_hint">Geben Sie einen Namen oder @Benutzernamen ein</string>
+    <string name="new_chat_empty">Beginnen Sie mit der Eingabe, um nach einem Benutzer zu suchen</string>
+    <string name="new_chat_none">Keine Benutzer gefunden</string>
+
+    <string name="backend_not_connected">Server noch nicht verbunden – läuft im lokalen Modus</string>
+
+    <string name="error_generic">Fehler</string>
+    <string name="error_server_connection">Serververbindungsfehler:</string>
+    <string name="error_server_not_configured">Serveradresse ist nicht festgelegt</string>
+
+    <string name="group_setting_change_failed">Die Einstellung konnte nicht geändert werden</string>
+    <string name="group_role_change_failed">Die Rolle konnte nicht geändert werden</string>
+    <string name="group_set_username">Legen Sie @Benutzernamen fest</string>
+    <string name="group_name_title">Gruppenname</string>
+    <string name="group_rename_failed">Umbenennen fehlgeschlagen</string>
+    <string name="group_username_hint">@group_username</string>
+    <string name="group_username_title">Gruppenbenutzername</string>
+    <string name="group_username_save_failed">Benutzername konnte nicht gespeichert werden</string>
+    <string name="uploading_photo">Foto wird hochgeladen…</string>
+    <string name="photo_upload_failed">Foto konnte nicht hochgeladen werden</string>
+    <string name="photo_process_error">Fehler beim Verarbeiten des Fotos:</string>
+
+    <string name="msg_send_failed">Senden fehlgeschlagen</string>
+    <string name="encryption_error">Verschlüsselungsfehler:</string>
+    <string name="decrypt_failed_short">Entschlüsselung fehlgeschlagen</string>
+    <string name="preparing_file">Datei wird vorbereitet…</string>
+    <string name="file_upload_failed">Datei konnte nicht hochgeladen werden</string>
+    <string name="file_read_error">Fehler beim Lesen der Datei:</string>
+    <string name="group_key_decrypt_failed">Der Gruppenschlüssel konnte nicht entschlüsselt werden</string>
+    <string name="group_admin_only_send">Nur Administratoren können in dieser Gruppe Beiträge posten</string>
+    <string name="peer_no_key_yet">Diese Person hat noch keinen Verschlüsselungsschlüssel. Bitten Sie sie, die App zu öffnen und es erneut zu versuchen</string>
+
+    <string name="fab_new_chat">Neuer Chat</string>
+    <string name="fab_new_group">Neue Gruppe</string>
+    <string name="pubkey_upload_failed">Der öffentliche Schlüssel konnte nicht auf den Server hochgeladen werden:</string>
+    <string name="pubkey_not_uploaded">Der Schlüssel wurde nicht auf den Server hochgeladen</string>
+    <string name="keygen_failed">Die Generierung des Verschlüsselungsschlüssels ist fehlgeschlagen</string>
+    <string name="keygen_create_failed">Fehler beim Erstellen des Verschlüsselungsschlüssels</string>
+    <string name="ok">OK</string>
+    <string name="chat_unpin">Lösen</string>
+    <string name="chat_pin">Stift</string>
+    <string name="chat_archive">Archiv</string>
+    <string name="notif_enable">Benachrichtigungen aktivieren</string>
+    <string name="notif_disable">Benachrichtigungen deaktivieren</string>
+
+    <string name="contacts_in_app_header">KONTAKTE AUF TALKSY</string>
+    <string name="searching_contacts">Kontakte werden gesucht…</string>
+    <string name="no_phone_contacts">In Ihren Kontakten wurden keine Telefonnummern gefunden</string>
+    <string name="no_registered_contacts">Keiner Ihrer Kontakte ist bisher auf Talksy</string>
+    <string name="grant_contacts_permission">Erlauben Sie den Zugriff auf Kontakte, um zu sehen, wer bereits auf Talksy ist – oder suchen Sie oben nach jemandem</string>
+    <string name="search_results_header">SUCHERGEBNISSE</string>
+    <string name="server_not_configured_settings">Server nicht konfiguriert (Einstellungen → Server)</string>
+
+    <string name="last_seen_recently">zuletzt zuletzt gesehen</string>
+    <string name="last_seen_online">online</string>
+    <string name="last_seen_at_time">zuletzt gesehen bei %s</string>
+    <string name="last_seen_yesterday_at">zuletzt gesehen gestern bei %s</string>
+    <string name="last_seen_date_format">d MMM \'at\' HH:mm</string>
+    <string name="last_seen_date_at">zuletzt gesehen %s</string>
+
+    <string name="profile_save_failed">Speichern fehlgeschlagen</string>
+    <string name="image_read_failed">Bild konnte nicht gelesen werden</string>
+    <string name="photo_updated">Foto aktualisiert</string>
+
+    <string name="server_not_set_hint">Server nicht eingestellt – zum Konfigurieren tippen</string>
+    <string name="server_label_prefix">Server:</string>
+    <string name="server_address_title">Serveradresse</string>
+    <string name="server_address_message">Geben Sie die Backend-Serveradresse ein. Für den Emulator: 10.0.2.2:5000. Für ein echtes Telefon im selben WLAN: COMPUTER_IP:5000</string>
+    <string name="digits_suffix">Ziffern)</string>
+
+    <string name="downloading_file">Herunterladen "</string>
+    <string name="file_download_failed">Datei konnte nicht heruntergeladen werden</string>
+    <string name="no_app_to_open_file">Keine App zum Öffnen dieser Datei gefunden</string>
+
+    <string name="my_groups_header">MEINE GRUPPEN</string>
+    <string name="found_header">GEFUNDEN</string>
+    <string name="joined_group_prefix">Du bist der Gruppe beigetreten“</string>
+    <string name="join_group_failed">Der Beitritt zur Gruppe ist fehlgeschlagen</string>
+
+    <string name="revoke_admin">Administratorrechte entziehen</string>
+    <string name="make_admin">Machen Sie Administrator</string>
+    <string name="role_owner">EIGENTÜMER</string>
+    <string name="role_admin">ADMIN</string>
+    <string name="no_messages_yet">Noch keine Nachrichten</string>
+
+    <string name="notif_channel_name">Talksy-Nachrichten</string>
+    <string name="notif_channel_desc">Benachrichtigungen über neue Nachrichten in Talksy-Chats</string>
+    <string name="checking_new_messages">Suche nach neuen Nachrichten</string>
+
+    <string name="file_open_failed">Datei konnte nicht geöffnet werden</string>
+    <string name="file_too_big_prefix">Datei ist größer als</string>
+    <string name="file_too_big_suffix">MB – das wird noch nicht unterstützt</string>
+
+    <string name="enter_group_name">Geben Sie einen Gruppennamen ein</string>
+    <string name="group_create_failed">Die Gruppe konnte nicht erstellt werden</string>
+    <string name="encryption_setup_error">Fehler bei der Einrichtung der Verschlüsselung:</string>
+
+    <string name="profile_load_failed">Profil konnte nicht geladen werden</string>
+    <string name="unblock">Entsperren</string>
+    <string name="block">Block</string>
+
+    <string name="server_not_configured_full">Server ist nicht konfiguriert. Gehen Sie zu Einstellungen → Server und geben Sie die Backend-Adresse ein (siehe backend/README.md).</string>
+    <string name="sending_code">Code wird gesendet…</string>
+    <string name="code_send_failed">Code konnte nicht gesendet werden</string>
+
+    <string name="size_bytes">B</string>
+    <string name="size_kb">%.0f KB</string>
+    <string name="size_mb">%.1f MB</string>
+
+    <string name="proxy_handshake_rejected">Talksy-Proxy: Server hat den Handshake abgelehnt (Code</string>
+    <string name="proxy_encryption_error">Talksy-Proxy-Verschlüsselungsfehler:</string>
+
+    <string name="code_resend_failed">Code konnte nicht erneut gesendet werden</string>
+    <string name="checking">Überprüfung…</string>
+
+    <string name="unarchive">Dearchivieren</string>
+
+    <string name="group_prefix">Gruppe:</string>
+
+    <string name="location_unknown">Standort unbekannt</string>
+
+    <string name="group_make_channel_title">Kanal (in der Suche angezeigt)</string>
+    <string name="group_make_channel_desc">Wenn diese Option aktiviert ist, kann die Gruppe bei der Suche anhand ihres Namens gefunden werden. Andernfalls kann ihr nur auf Einladung beigetreten werden</string>
+    <string name="group_private_title">Private Gruppe</string>
+    <string name="group_private_desc">Wenn diese Option aktiviert ist, kann niemand der Gruppe beitreten, selbst wenn er sie irgendwie findet – nur auf Einladung eines Mitglieds</string>
+
+    <string name="settings_e2e">Ende-zu-Ende-Verschlüsselung (E2E)</string>
+    <string name="settings_e2e_desc">Standardmäßig werden Nachrichten mit einem vom Server gehaltenen Schlüssel verschlüsselt – zuverlässig, aber der Server kann sie technisch lesen. Aktivieren Sie diese Option, damit nur die andere Person Ihre Nachrichten entschlüsseln kann. Der Versand kann dann manchmal warten, bis ein Verschlüsselungsschlüssel vorliegt</string>
+
+    <string name="email_spam_hint">Wenn die E-Mail nicht innerhalb weniger Minuten eintrifft, überprüfen Sie Ihren Spam-Ordner</string>
+    <string name="code_sent_wait">Gesendet (%ds)</string>
+
+    <string name="delete_for_me">Für mich löschen</string>
+    <string name="delete_for_everyone">Für alle löschen</string>
+    <string name="delete_for_everyone_confirm">Dadurch wird die Nachricht für alle im Chat gelöscht, ohne dass eine Möglichkeit besteht, sie rückgängig zu machen. Trotzdem löschen?</string>
+    <string name="message_deleted">Nachricht gelöscht</string>
+
+    <string name="settings_section_appearance">AUSSEHEN</string>
+    <string name="settings_section_security">SICHERHEIT</string>
+    <string name="settings_section_account">KONTO &amp; NETZWERK</string>
+
+    <string name="call_incoming">Eingehender Anruf…</string>
+    <string name="call_calling">Berufung…</string>
+    <string name="call_connecting">Verbinden…</string>
+    <string name="call_connected">Verbunden</string>
+    <string name="call_connection_lost">Verbindung verloren</string>
+    <string name="call_permission_denied">Mikrofonzugriff erforderlich (und Kamera für Videoanrufe)</string>
+    <string name="call_failed">Der Anruf konnte nicht gestartet werden</string>
+    <string name="call_ended_by_peer">Die andere Person beendete das Gespräch</string>
+    <string name="notif_accept">Akzeptieren</string>
+    <string name="notif_decline">Abfall</string>
+    <string name="call_channel_name">Anrufe</string>
+    <string name="typing_now">tippen…</string>
+    <string name="menu_copy_text">Text kopieren</string>
+    <string name="menu_save_downloads">Unter „Downloads“ speichern</string>
+    <string name="menu_forward">Nach vorne</string>
+    <string name="menu_delete">Löschen</string>
+    <string name="text_copied">Text kopiert</string>
+    <string name="forward_to">Weiterleiten an…</string>
+    <string name="forwarded_ok">Weitergeleitet</string>
+    <string name="msg_status_sent">Gesendet</string>
+    <string name="msg_status_read">Lesen</string>
+    <string name="msg_reply">Antwort</string>
+    <string name="msg_edit">Bearbeiten</string>
+    <string name="msg_pin">Stift</string>
+    <string name="msg_unpin">Lösen</string>
+    <string name="reply_title">Antwort</string>
+    <string name="edit_title">Nachricht wird bearbeitet</string>
+    <string name="pinned_title">Angeheftete Nachricht</string>
+    <string name="edited_mark">bearbeitet</string>
+    <string name="reply_original_missing">Nachricht</string>
+    <string name="logo_text">Talksy</string>
+    <string name="upload_progress">%1$s von %2$s MB · %3$d%%</string>
+    <string name="upload_too_big">Die Datei ist zu groß (maximal %1$d MB)</string>
+    <string name="upload_cancel_confirm">Senden dieser Datei abbrechen?</string>
+    <string name="upload_cancel_yes">Hochladen abbrechen</string>
+    <string name="story_you">Du</string>
+    <string name="story_photo">Foto</string>
+    <string name="story_video">Video</string>
+    <string name="story_limit">Sie können bis zu 3 Geschichten veröffentlichen</string>
+    <string name="story_published">Geschichte veröffentlicht</string>
+    <string name="story_reply_hint">Antwort…</string>
+    <string name="story_reply_sent">Antwort gesendet</string>
+    <string name="story_reply_label">Auf die Geschichte antworten</string>
+    <string name="story_delete_confirm">Diese Geschichte löschen?</string>
+    <string name="story_delete_btn">Löschen</string>
+    <string name="story_deleted">Geschichte gelöscht</string>
+    <string name="story_load_failed">Die Story konnte nicht geladen werden</string>
+    <string name="story_just_now">soeben</string>
+    <string name="story_min_ago">%1$d vor einer Minute</string>
+    <string name="story_hours_ago">%1$d vor h</string>
+    <string name="story_views_title">Ansichten: %1$d</string>
+    <string name="story_no_views">Noch keine Aufrufe</string>
+    <string name="who_write_title">Wer kann mir eine Nachricht senden?</string>
+    <string name="who_write_all">Alle</string>
+    <string name="who_write_contacts">Nur Leute, denen ich geschrieben habe</string>
+    <string name="who_write_nobody">Niemand</string>
+    <string name="who_write_saved">Gespeichert</string>
+    <string name="who_write_hint">Gilt für Nachrichten und Anrufe. Personen, die keinen Zutritt haben, werden einen Hinweis sehen.</string>
+    <string name="channel_subscribe">Abonnieren</string>
+    <string name="channel_unsubscribe">Abbestellen</string>
+    <string name="channel_subscribed">Du hast dich angemeldet</string>
+    <string name="channel_unsubscribed">Sie haben sich abgemeldet</string>
+    <string name="channel_unsubscribe_confirm">Von diesem Kanal abmelden?</string>
+    <string name="members_title_count">MITGLIEDER · %1$d</string>
+    <string name="members_visible_title">Mitglieder allen zeigen</string>
+    <string name="members_visible_desc">Wenn diese Option deaktiviert ist, können nur der Eigentümer und Administratoren die Kanalmitglieder sehen</string>
+    <string name="members_hidden_note">Die Mitgliederliste wird vom Kanalbesitzer ausgeblendet</string>
+    <string name="notif_reply">Antwort</string>
+    <string name="notif_reply_hint">Nachricht…</string>
+    <string name="notif_reply_sent">Gesendet: %1$s</string>
+    <string name="notif_reply_failed">Konnte nicht gesendet werden</string>
+    <string name="notif_hangup">Auflegen</string>
+    <string name="call_in_progress">Anruf läuft</string>
+    <string name="call_video_in_progress">Videoanruf läuft</string>
+    <string name="call_ongoing_channel_name">Laufender Anruf</string>
+    <string name="call_go_to_chats">Gehen Sie zu Chats</string>
+
+    <string name="cancel">Stornieren</string>
+    <string name="saved">Gespeichert</string>
+    <string name="copy">Kopie</string>
+    <string name="copied">Kopiert</string>
+
+    <string name="botfather_greeting">Hallo! Ich helfe Ihnen bei der Erstellung und Konfiguration eines Bots für diesen Messenger.</string>
+    <string name="botfather_menu_prompt">Was möchten Sie tun?</string>
+    <string name="botfather_btn_create">Erstellen Sie einen Bot</string>
+    <string name="botfather_btn_my_bots">Meine Bots</string>
+    <string name="botfather_ask_name">Wie soll der Bot heißen? Dies ist der Name, den die Leute sehen, wenn sie ihm eine Nachricht senden.</string>
+    <string name="botfather_name_too_long">Dieser Name ist zu lang (maximal 64 Zeichen). Versuchen Sie es mit etwas Kürzerem.</string>
+    <string name="botfather_ask_username">Wählen Sie nun einen Benutzernamen für den Bot aus: 5–32 Zeichen, lateinische Buchstaben/Ziffern/Unterstrich, und er muss auf „bot“ enden (z. B. my_cool_bot).</string>
+    <string name="botfather_ask_username_again">Versuchen Sie es mit einem anderen Benutzernamen.</string>
+    <string name="botfather_done">Erledigt! Der Bot „%1$s“ (%2$s) wurde erstellt. Hier ist sein Token – der Code Ihres Bots benötigt es, um als Bot mit dem Server zu kommunizieren. Halten Sie es geheim, wie ein Passwort.</string>
+    <string name="botfather_copy_token">Token kopieren</string>
+    <string name="botfather_open_settings">Bot-Einstellungen</string>
+    <string name="botfather_what_next">Was kommt als nächstes?</string>
+
+    <string name="my_bots_title">Meine Bots</string>
+    <string name="my_bots_empty">Noch keine Bots. Tippen Sie auf „+“, um Ihr erstes über BotFather zu erstellen.</string>
+
+    <string name="bot_token_label">BOT-TOKEN</string>
+    <string name="bot_show_token">Zeigen</string>
+    <string name="bot_hide_token">Verstecken</string>
+    <string name="bot_regenerate_token">Token neu generieren</string>
+    <string name="bot_regenerate_token_hint">Das alte Token funktioniert sofort nicht mehr – Sie müssen den Code Ihres Bots mit dem neuen aktualisieren.</string>
+    <string name="bot_regenerate_token_confirm">Der alte Token funktioniert sofort nicht mehr. Der von Ihnen ausgeführte Bot-Code muss mit dem neuen Token aktualisiert werden. Weitermachen?</string>
+    <string name="bot_token_updated">Token regeneriert</string>
+
+    <string name="bot_name_label">NAME</string>
+    <string name="bot_bio_label">BESCHREIBUNG</string>
+    <string name="bot_name_required">Geben Sie einen Namen für den Bot ein</string>
+
+    <string name="bot_webhook_label">WEBHOOK (optional)</string>
+    <string name="bot_webhook_hint">Standardmäßig fragt der Bot den Server selbst ab (getUpdates) – es muss nichts eingerichtet werden, funktioniert auch ohne öffentliche IP. Ein Webhook ist nur erforderlich, wenn Ihr Bot-Code unter einer öffentlichen https-Adresse gehostet wird und Sie möchten, dass der Server Nachrichten direkt an ihn sendet.</string>
+    <string name="bot_webhook_clear">Webhook entfernen</string>
+
+    <string name="bot_docs_label">SO VERBINDEN SIE IHREN BOT</string>
+    <string name="bot_docs_intro">Der Bot-Code ist in Python geschrieben und läuft AUF IHRER EIGENEN MASCHINE – nicht im Messenger. Hier ist ein minimales Arbeitsbeispiel mit getUpdates:</string>
+    <string name="bot_docs_code_sample"><![CDATA[import requests, time
+
+TOKEN = "%1$s"
+BASE = "SERVER/bot" + TOKEN
+
+offset = 0
+while True:
+    r = requests.get(f"{BASE}/getUpdates", params={"offset": offset, "timeout": 25}).json()
+    for upd in r["result"]:
+        offset = upd["update_id"] + 1
+        msg = upd["message"]
+        chat_id = msg["chat"]["id"]
+        text = msg["text"]
+        requests.post(f"{BASE}/sendMessage",
+            json={"chat_id": chat_id, "text": f"You said: {text}"})]]></string>
+
+    <string name="bot_delete">Bot löschen</string>
+    <string name="bot_delete_confirm">Der Bot und sein Token werden dauerhaft gelöscht. Der Chatverlauf damit bleibt erhalten. Weitermachen?</string>
+    <string name="bot_deleted">Bot gelöscht</string>
+    <string name="bot_chat_subtitle">bot</string>
+    <string name="mention_not_found">Nichts gefunden</string>
+    <string name="blocked_by_peer">Dieser Benutzer erlaubt Ihnen nicht, ihm eine Nachricht zu senden</string>
+    <string name="bot_add_to_group">Bot zur Gruppe hinzufügen</string>
+    <string name="bot_added_to_group">Bot zur Gruppe hinzugefügt</string>
+    <string name="add_participant">Teilnehmer hinzufügen</string>
+    <string name="member_added">Teilnehmer hinzugefügt</string>
+    <string name="pick_group_for_bot">Wählen Sie eine Gruppe</string>
+    <string name="bot_mode_webhook">Webhook</string>
+    <string name="bot_mode_mini_app">Mini-App</string>
+    <string name="bot_response_mode">Wie der Bot reagiert</string>
+    <string name="mini_app_url_hint">your-miniapp.example</string>
+    <string name="mini_app_name_hint">Name der Mini-App</string>
+    <string name="open_bot_mini_app">Öffnen Sie die Mini-App</string>
+    <string name="privacy_section_title">Privatsphäre</string>
+    <string name="privacy_who_can_write">Wer kann mir eine Nachricht senden?</string>
+    <string name="liquid_glass_toggle">Flüssiges Glas</string>
+    <string name="liquid_glass_toggle_sub">Glasoberfläche im iOS/Telegram-Stil</string>
+    <string name="switch_account_title">Konten</string>
+    <string name="add_account">Konto hinzufügen</string>
+    <string name="max_accounts_hint">Sie können bis zu %d-Konten gleichzeitig verwalten</string>
+    <string name="account_switched">Konto gewechselt</string>
+    <string name="settings_accounts">Konten</string>
+    <string name="settings_accounts_sub">Bis zu 3 Konten, schneller Wechsel</string>
+    <string name="spoiler_menu_item">Als Spoiler verstecken</string>
+    <string name="spoiler_hint">Zum Enthüllen tippen</string>
+    <string name="video_speed">Geschwindigkeit</string>
+    <string name="video_quality">Qualität</string>
+    <string name="video_quality_auto">Auto</string>
+    <string name="video_quality_high">Hoch</string>
+    <string name="video_quality_medium">Mittel (Datensparer)</string>
+    <string name="send_blurred">Verschwommen senden</string>
+    <string name="media_picker_title">Fotos und Videos</string>
+    <string name="media_picker_recents">Jüngste</string>
+    <string name="media_picker_permission">Erlauben Sie den Zugriff auf die Galerie</string>
+    <string name="media_picker_empty">Nichts gefunden</string>
+    <string name="video_loading_percent">%d%%</string>
+
+    <string name="logout_confirm">Von diesem Gerät abmelden?</string>
+
+    <string name="settings_section_chat">CHATS UND MEDIEN</string>
+    <string name="settings_wallpaper">Chat-Hintergrundbild</string>
+    <string name="settings_wallpaper_sub">Hintergrundfarbe für Chats oder Ihr eigenes Foto</string>
+    <string name="settings_font_size">Schriftgröße</string>
+    <string name="settings_auto_download">Medien automatisch herunterladen</string>
+    <string name="settings_auto_download_sub">Wann Sie Fotos und Videos in Chats herunterladen sollten</string>
+
+    <string name="settings_section_data">DATEN</string>
+    <string name="settings_storage">Lagerung</string>
+    <string name="settings_storage_sub">Cachegröße, heruntergeladene Dateien löschen</string>
+    <string name="settings_blocked">Blockierte Benutzer</string>
+    <string name="settings_blocked_sub">Personen, die Sie blockiert haben</string>
+
+    <string name="wallpaper_default">Standard</string>
+    <string name="wallpaper_custom">Dein Foto</string>
+    <string name="wallpaper_indigo">Indigo</string>
+    <string name="wallpaper_sunset">Sonnenuntergang</string>
+    <string name="wallpaper_ocean">Ozean</string>
+    <string name="wallpaper_forest">Wald</string>
+    <string name="wallpaper_rose">Rose</string>
+    <string name="wallpaper_midnight">Mitternacht</string>
+    <string name="wallpaper_saved">Hintergrundbild gespeichert</string>
+
+    <string name="font_size_small">Klein</string>
+    <string name="font_size_medium">Standard</string>
+    <string name="font_size_large">Groß</string>
+
+    <string name="auto_download_wifi">Nur WLAN</string>
+    <string name="auto_download_always">Stets</string>
+    <string name="auto_download_never">Niemals</string>
+
+    <string name="storage_cache_desc">Wird von heruntergeladenen Fotos, Videos und Dateien verwendet</string>
+    <string name="storage_clear_cache">Cache leeren</string>
+    <string name="storage_clear_cache_hint">Dateien werden von diesem Gerät entfernt, bleiben aber in Chats verfügbar – sie werden bei Bedarf erneut heruntergeladen.</string>
+    <string name="storage_cache_cleared">Cache geleert</string>
+
+    <string name="blocked_empty">Keine blockierten Benutzer</string>
+    <string name="blocked_unblock_confirm">Diesen Benutzer entsperren? Sie können Ihnen eine Nachricht senden und Ihr Profil erneut sehen.</string>
+
+    <string name="profile_stories">GESCHICHTEN</string>
+    <string name="profile_stories_view">Sicht</string>
+    <string name="profile_media">MEDIEN</string>
+    <string name="profile_gifts">Geschenke</string>
+    <string name="profile_gifts_sub">Schicken Sie sich gegenseitig Geschenke im Chat</string>
+    <string name="profile_gifts_toast">Bald kommen Geschenke bei Talksy</string>
+    <string name="profile_soon">BALD</string>
+
+    <string name="miniapp_invalid">Für diesen Bot ist keine Mini-App verfügbar</string>
+    <string name="miniapp_default_title">Mini-App</string>
+    <string name="miniapp_load_error">Die Mini-App (%1$s) konnte nicht geladen werden. Überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.</string>
+    <string name="miniapp_open">Offen</string>
+    <string name="bot_start">Start</string>
+    <plurals name="bot_users_count">
+        <item quantity="one">%d-Benutzer</item>
+        <item quantity="other">%d-Benutzer</item>
+    </plurals>
+    <string name="attach_gallery">Galerie</string>
+    <string name="attach_file">Datei</string>
+    <string name="attach_send_plain">Schicken</string>
+
+    <string name="connecting">Verbinden</string>
+    <string name="connecting_lower">verbinden</string>
+    <string name="no_connection">Keine Verbindung</string>
+    <string name="needs_internet">Internetverbindung erforderlich</string>
+    <string name="reaction_wait_sent">Sie können reagieren, sobald die Nachricht gesendet wurde</string>
+    <string name="group_subtitle">Gruppe</string>
+    <string name="channel_subtitle">Kanal</string>
+
+    <string name="record_voice">Sprachnachricht</string>
+    <string name="record_round">Videobotschaft</string>
+    <string name="mode_voice_hint">Halten Sie gedrückt, um eine Sprachnachricht aufzuzeichnen</string>
+    <string name="mode_round_hint">Halten Sie gedrückt, um eine Videonachricht aufzuzeichnen</string>
+    <string name="record_slide_cancel">‹ Zum Abbrechen nach links schieben</string>
+    <string name="record_release_cancel">Zum Abbrechen loslassen</string>
+    <string name="record_up_to_lock">Wischen Sie nach oben, um mit der Aufnahme fortzufahren</string>
+    <string name="record_too_short">Die Aufnahme ist zu kurz</string>
+    <string name="record_failed">Die Aufnahme konnte nicht gestartet werden</string>
+    <string name="record_hold_again">Halten Sie nun die Taste erneut gedrückt</string>
+    <string name="cancel_caps">STORNIEREN</string>
+    <string name="voice_load_failed">Sprachnachricht konnte nicht geladen werden</string>
+    <string name="msg_type_voice">Sprachnachricht</string>
+    <string name="msg_type_round">Videobotschaft</string>
+    <string name="close">Schließen</string>
+    <string name="more">Mehr</string>
+    <string name="miniapp_minimize">Minimieren</string>
+    <string name="link_open_in_browser">Im Browser öffnen</string>
+    <string name="link_copy">Link kopieren</string>
+    <string name="link_copied">Link kopiert</string>
+    <string name="link_share">Aktie</string>
+    <string name="link_reload">Neu laden</string>
+    <string name="link_load_error">Die Seite konnte nicht geladen werden (%1$s)</string>
+    <string name="link_blocked">Dieser Link kann nicht geöffnet werden</string>
+    <string name="miniapp_return">Zurück zur Mini-App</string>
+    <string name="miniapp_system_badge">System-App</string>
+    <string name="settings_links_in_app">Öffnen Sie Links in der App</string>
+    <string name="settings_links_in_app_sub">Aus – Links werden in Ihrem Hauptbrowser geöffnet. System-Mini-Apps werden immer in Talksy geöffnet.</string>
+    <string name="nav_chats">Chats</string>
+    <string name="nav_contacts">Kontakte</string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="nav_profile">Profil</string>
+    <string name="settings_privacy">Privatsphäre</string>
+    <string name="settings_privacy_sub">Wer kann Ihre Daten einsehen und Ihnen schreiben?</string>
+    <string name="priv_phone">Telefonnummer</string>
+    <string name="priv_username">Benutzername</string>
+    <string name="priv_last_seen">Zuletzt gesehen</string>
+    <string name="priv_photo">Profilfotos</string>
+    <string name="priv_bio">Um</string>
+    <string name="priv_messages">Nachrichten</string>
+    <string name="priv_group_invites">Gruppen und Kanäle</string>
+    <string name="priv_calls">Anrufe</string>
+    <string name="priv_voice">Sprach- und Videonachrichten</string>
+    <string name="priv_everybody">Alle</string>
+    <string name="priv_contacts">Meine Kontakte</string>
+    <string name="priv_nobody">Niemand</string>
+    <string name="priv_group_invites_note">Wenn Sie das Hinzufügen zu Gruppen verbieten, senden Ihnen die Leute stattdessen eine Einladung – Sie entscheiden, ob Sie beitreten möchten.</string>
+    <string name="priv_invites">Gruppeneinladungen</string>
+    <string name="priv_invites_sub">Einladungen von Personen, die Sie nicht direkt hinzufügen können</string>
+    <string name="invites_empty">Keine Einladungen</string>
+    <string name="invites_banner">Gruppeneinladungen: %1$d</string>
+    <string name="invite_accept">Akzeptieren</string>
+    <string name="invite_decline">Abfall</string>
+    <string name="invite_accepted">Du bist der Gruppe beigetreten</string>
+    <string name="invite_group_from">Eingeladen von %1$s · %2$d-Mitgliedern</string>
+    <string name="invite_channel_from">Eingeladen von %1$s · %2$d-Abonnenten</string>
+    <string name="pub_tab">Beiträge</string>
+    <string name="pub_archive_tab">Beitragsarchiv</string>
+    <string name="pub_empty">Noch keine Beiträge</string>
+    <string name="pub_empty_sub">Von Ihnen geteilte Fotos und Videos werden hier angezeigt.</string>
+    <string name="pub_archive_empty">Das Archiv ist leer</string>
+    <string name="pub_archive_empty_sub">Abgelaufene Geschichten sind nur für Sie sichtbar, es sei denn, Sie veröffentlichen sie in Ihrem Profil.</string>
+    <string name="pub_add">Hinzufügen</string>
+    <string name="pub_delete_title">Aus Archiv löschen?</string>
+    <string name="pub_delete_msg">Der Beitrag wird dauerhaft gelöscht.</string>
+    <string name="storage_title">Speichernutzung</string>
+    <string name="storage_sub">Talksy belegt so viel Speicherplatz auf Ihrem Gerät</string>
+    <string name="storage_clear_all">Cache löschen %1$s</string>
+    <string name="storage_clear">Klar</string>
+    <string name="storage_clear_cat">Wird gelöscht: %1$s</string>
+    <string name="storage_clear_title">Cache leeren?</string>
+    <string name="storage_clear_msg">Dateien bleiben auf dem Server – Sie können sie bei Bedarf erneut herunterladen.</string>
+    <string name="storage_cloud_note">Alle Medien bleiben in der Talksy-Cloud, Sie können sie jederzeit wieder herunterladen.</string>
+    <string name="storage_auto_title">Zwischengespeicherte Medien automatisch löschen</string>
+    <string name="storage_ttl">Cache aufbewahren für</string>
+    <string name="storage_max">Maximale Cachegröße</string>
+    <string name="storage_unlimited">Unbegrenzt</string>
+    <string name="storage_auto_note">Dateien, die Sie in diesem Zeitraum nicht geöffnet haben, bzw. die ältesten Dateien, wenn das Limit überschritten wird, werden vom Gerät entfernt.</string>
+    <string name="ttl_1d">1 Tag</string>
+    <string name="ttl_1w">1 Woche</string>
+    <string name="ttl_1m">1 Monat</string>
+    <string name="ttl_3m">3 Monate</string>
+    <string name="ttl_never">Niemals</string>
+    <string name="cat_video">Video</string>
+    <string name="cat_files">Dateien</string>
+    <string name="cat_photo">Fotos</string>
+    <string name="cat_voice">Sprachnachrichten</string>
+    <string name="cat_stickers">Aufkleber und Emoji</string>
+    <string name="cat_other">Andere</string>
+    <string name="cat_messages">Nachrichten</string>
+    <string name="data_title">Datennutzung</string>
+    <string name="data_title_sub">Wie viel wurde gesendet und empfangen?</string>
+    <string name="net_all">Alle</string>
+    <string name="net_mobile">Mobile</string>
+    <string name="net_wifi">W-lan</string>
+    <string name="net_roaming">Wandernd</string>
+    <string name="data_since">Statistik seit %1$s</string>
+    <string name="data_tap_hint">Tippen Sie auf eine Zeile, um Details anzuzeigen.</string>
+    <string name="data_total">Gesamtverkehr</string>
+    <string name="data_sent">Gesendet</string>
+    <string name="data_received">Erhalten</string>
+    <string name="data_note">Zählt den eigenen Datenverkehr der App: Nachrichten, Fotos, Videos, Dateien und Sprachnachrichten.</string>
+    <string name="data_auto_hint">Ändern Sie, um mobile Daten zu speichern</string>
+    <string name="data_reset">Statistiken zurücksetzen</string>
+    <string name="data_reset_msg">Die Verkehrszähler werden zurückgesetzt.</string>
+    <string name="data_sent_received">Gesendet: %1$s · Empfangen: %2$s</string>
+    <string name="delete">Löschen</string>
+    <string name="devices_title">Geräte</string>
+    <string name="devices_this">Dieses Gerät</string>
+    <string name="devices_active">Aktive Sitzungen</string>
+    <string name="devices_end_others">Beenden Sie alle anderen Sitzungen</string>
+    <string name="devices_end_others_note">Melden Sie sich auf allen Geräten außer diesem ab.</string>
+    <string name="devices_end_others_confirm">Alle anderen Geräte werden abgemeldet. Sie können sich erneut mit einem E-Mail-Code anmelden.</string>
+    <string name="devices_end_session">Sitzung beenden</string>
+    <string name="devices_active_note">Sie können sich auf anderen Geräten bei Talksy anmelden – alle aktiven Sitzungen werden hier aufgelistet. Tippen Sie auf eine Sitzung, um deren Einstellungen zu ändern.</string>
+    <string name="devices_none">Keine weiteren aktiven Sitzungen.</string>
+    <string name="devices_auto_title">Sitzungen automatisch beenden</string>
+    <string name="devices_auto_if">Wenn inaktiv für</string>
+    <string name="devices_auto_note">Wenn Sie ein Gerät länger nicht genutzt haben, wird dessen Sitzung automatisch beendet.</string>
+    <string name="devices_1w">1 Woche.</string>
+    <string name="devices_1m">1 Monat.</string>
+    <string name="devices_3m">3 Monate.</string>
+    <string name="devices_6m">6 Monate.</string>
+    <string name="devices_1y">1 Jahr.</string>
+    <string name="devices_online">online</string>
+    <string name="devices_today_at">heute bei %1$s</string>
+    <string name="devices_yesterday_at">gestern bei %1$s</string>
+    <string name="devices_app">Anwendung</string>
+    <string name="devices_geo">Standort basierend auf der IP-Adresse</string>
+    <string name="devices_accept_secret">Akzeptieren Sie geheime Chats</string>
+    <string name="devices_accept_secret_sub">Verwenden Sie dieses Gerät für geheime (E2E) Chats</string>
+    <string name="devices_accept_calls">Anrufe annehmen</string>
+    <string name="devices_accept_calls_sub">Verwenden Sie dieses Gerät für Anrufe</string>
+    <string name="priv_archive">Publikationsarchiv</string>
+    <string name="pub_archive_hidden">Dieser Benutzer hat sein Publikationsarchiv ausgeblendet</string>
+    <string name="pub_empty_other">Fotos und Videos, die diese Person teilt, werden hier angezeigt.</string>
+    <string name="pub_archive_empty_other">Diese Person hat keine älteren Veröffentlichungen.</string>
+
+    <string name="account_ttl_12">Nach 12 Monaten Inaktivität</string>
+    <string name="account_ttl_24">Nach 24 Monaten Inaktivität</string>
+    <string name="account_ttl_6">Nach 6 Monaten Inaktivität</string>
+    <string name="account_ttl_title">Automatische Kontolöschung</string>
+    <string name="applock_change_pin">PIN ändern</string>
+    <string name="applock_disable">Sperre deaktivieren</string>
+    <string name="applock_disable_biometric">Biometrie deaktivieren</string>
+    <string name="applock_disabled">Sperre deaktiviert</string>
+    <string name="applock_enable_biometric">Biometrie aktivieren</string>
+    <string name="applock_off">Aus</string>
+    <string name="applock_pin_bio">PIN und Biometrie</string>
+    <string name="applock_pin_only">Nur PIN</string>
+    <string name="applock_set_pin">PIN festlegen</string>
+    <string name="applock_title">PIN und Biometrie</string>
+    <string name="attach_contact">Kontakt</string>
+    <string name="attach_empty">Hier gibt es noch keine Fotos oder Videos</string>
+    <string name="attach_location">Standort</string>
+    <string name="attach_music">Musik</string>
+    <string name="attach_permission_btn">Zugriff erlauben</string>
+    <string name="attach_permission_hint">Der Zugriff auf die Galerie ist erforderlich, um Ihre Fotos und Videos anzuzeigen</string>
+    <string name="attach_poll">Umfrage</string>
+    <string name="attach_soon">Demnächst verfügbar</string>
+    <string name="attach_wallet">Wallet</string>
+    <string name="chat_delete">Chat löschen</string>
+    <string name="chat_delete_for_everyone">Für alle löschen</string>
+    <string name="chat_delete_for_me">Für mich löschen</string>
+    <string name="chat_you_label">Du</string>
+    <string name="draft_label">Entwurf:</string>
+    <string name="favorite_added">Zu Favoriten hinzugefügt</string>
+    <string name="favorite_removed">Aus Favoriten entfernt</string>
+    <string name="favorites_empty">Hier ist noch nichts.\nWählen Sie eine Nachricht aus und tippen Sie auf „Zu Favoriten hinzufügen“</string>
+    <string name="favorites_remove">Entfernen</string>
+    <string name="favorites_remove_confirm">Nachricht aus den Favoriten entfernen?</string>
+    <string name="favorites_sub">Gespeicherte Nachrichten</string>
+    <string name="favorites_title">Favoriten</string>
+    <string name="language_title">Sprache</string>
+    <string name="lock_biometric_title">Talksy entsperren</string>
+    <string name="lock_create_pin">PIN erstellen</string>
+    <string name="lock_enter_pin">PIN eingeben</string>
+    <string name="lock_mismatch">Die PINs stimmen nicht überein. Versuchen Sie es erneut</string>
+    <string name="lock_repeat_pin">PIN wiederholen</string>
+    <string name="lock_setup_hint">6 Ziffern</string>
+    <string name="lock_too_many">Zu viele Versuche. Versuchen Sie es in %1$d Sek.</string>
+    <string name="lock_use_pin">PIN eingeben</string>
+    <string name="lock_wrong_pin">Falsche PIN</string>
+    <string name="menu_favorite">Zu Favoriten hinzufügen</string>
+    <string name="menu_unfavorite">Aus Favoriten entfernen</string>
+    <string name="send_disappearing">Selbstlöschende Nachrichten</string>
+    <string name="send_schedule">Später senden</string>
+    <string name="send_schedule_done">Die Nachricht wird zur ausgewählten Zeit gesendet</string>
+    <string name="send_schedule_past">Wählen Sie eine zukünftige Zeit</string>
+    <string name="session_terminate_confirm">Sitzung auf diesem Gerät beenden?</string>
+    <string name="sticker_gif_soon">GIF – demnächst verfügbar</string>
+    <string name="sticker_no_packs">Es gibt noch keine Stickerpakete.\nTippen Sie auf ＋, um Ihr eigenes zu erstellen</string>
+    <string name="sticker_tab_emoji">Emoji</string>
+    <string name="sticker_tab_gif">GIF</string>
+    <string name="sticker_tab_stickers">Sticker</string>
+    <string name="ttl_day">1 Tag</string>
+    <string name="ttl_hour">1 Stunde</string>
+    <string name="ttl_month">30 Tage</string>
+    <string name="ttl_off">Aus</string>
+    <string name="ttl_saved">Einstellung gespeichert</string>
+    <string name="ttl_week">1 Woche</string>
+</resources>

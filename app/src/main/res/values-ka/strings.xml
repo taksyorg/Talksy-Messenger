@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ლაპარაკი</string>
+    <string name="app_sub">მესინჯერი</string>
+
+    <string name="auth_phone_title">შეიყვანეთ თქვენი ტელეფონის ნომერი</string>
+    <string name="auth_phone_sub">ჩვენ გამოგიგზავნით დადასტურების კოდს SMS-ით</string>
+    <string name="auth_phone_hint">+1 555 000 0000</string>
+    <string name="auth_continue">განაგრძეთ</string>
+    <string name="auth_phone_error">გთხოვთ, შეიყვანოთ სწორი ტელეფონის ნომერი</string>
+
+    <string name="auth_email_title">დაამატეთ თქვენი ელ. ფოსტა</string>
+    <string name="auth_email_sub">საჭიროა შესვლისა და ანგარიშის აღდგენისთვის</string>
+    <string name="auth_email_hint">you@example.com</string>
+    <string name="auth_email_error">გთხოვთ, შეიყვანოთ სწორი ელფოსტის მისამართი</string>
+
+    <string name="auth_code_title">შეიყვანეთ კოდი</string>
+    <string name="auth_code_sub_phone">კოდი გაიგზავნა %1$s-ზე</string>
+    <string name="auth_code_sub_email">და დუბლირებულია %1$s-ზე</string>
+    <string name="auth_code_hint">– – – – – –</string>
+    <string name="auth_code_resend">კოდის ხელახლა გაგზავნა</string>
+    <string name="auth_code_error">არასწორი კოდი, სცადეთ ხელახლა</string>
+    <string name="auth_code_verify">გადაამოწმეთ</string>
+    <string name="auth_dev_hint">კოდი (ტესტი რეჟიმი, სერვერი ჯერ არ არის): %1$s</string>
+
+    <string name="chats_title">ჩეთები</string>
+    <string name="chats_empty_title">აირჩიეთ ჩატი</string>
+    <string name="chats_empty_sub">ან დაიწყეთ ახალი საუბარი შედგენის ხატულის გამოყენებით</string>
+    <string name="search_hint">ძიება</string>
+    <string name="new_chat">ახალი ჩატი</string>
+    <string name="settings">პარამეტრები</string>
+    <string name="profile">პროფილი</string>
+
+    <string name="message_hint">შეტყობინება…</string>
+    <string name="send">გაგზავნა</string>
+
+    <string name="profile_name">სახელი</string>
+    <string name="profile_handle">მომხმარებლის სახელი</string>
+    <string name="profile_bio">ბიო</string>
+    <string name="profile_phone">ტელეფონი</string>
+    <string name="profile_email">ელ.ფოსტა</string>
+    <string name="save">შენახვა</string>
+    <string name="edit">რედაქტირება</string>
+    <string name="logout">გასვლა</string>
+
+    <string name="settings_theme">მუქი თემა</string>
+    <string name="settings_language">აპლიკაციის ენა</string>
+    <string name="settings_proxy">პროქსი და ცენზურის გვერდის ავლით</string>
+    <string name="settings_proxy_sub">დააკონფიგურირეთ SOCKS5 ან თქვენი საკუთარი ბუნდოვანი Talksy პროქსი</string>
+    <string name="settings_server">სერვერი (backend)</string>
+    <string name="settings_server_sub">სერვერის მისამართი, რომელიც რეალურად აგზავნის ელ.ფოსტის კოდს</string>
+    <string name="settings_server_hint">10.0.2.2:5000</string>
+    <string name="settings_server_not_set">არ არის დაყენებული</string>
+    <string name="settings_notifications">შეტყობინებები</string>
+    <string name="settings_about">შესახებ</string>
+
+    <string name="proxy_title">პროქსი კავშირი</string>
+    <string name="proxy_mode">რეჟიმი</string>
+    <string name="proxy_mode_off">გამორთულია</string>
+    <string name="proxy_mode_socks5">წინდები 5</string>
+    <string name="proxy_mode_custom">მორგებული Talksy პროქსი (ბუნდოვანი)</string>
+    <string name="proxy_host">სერვერის მისამართი</string>
+    <string name="proxy_port">პორტი</string>
+    <string name="proxy_user">მომხმარებლის სახელი (სურვილისამებრ)</string>
+    <string name="proxy_pass">პაროლი (სურვილისამებრ)</string>
+    <string name="proxy_secret">საიდუმლო გასაღები</string>
+    <string name="proxy_test">ტესტი კავშირი</string>
+    <string name="proxy_save">შეინახეთ და მიმართეთ</string>
+    <string name="proxy_ok">პროქსი დაკავშირებულია</string>
+    <string name="proxy_fail">კავშირი ვერ მოხერხდა</string>
+    <string name="proxy_help">იხილეთ proxy-server/README.md პროექტის არქივში თვითჰოსტინგის ინსტრუქციებისთვის.</string>
+
+    <string name="new_chat_hint">შეიყვანეთ სახელი ან @username</string>
+    <string name="new_chat_empty">დაიწყეთ აკრეფა მომხმარებლის მოსაძებნად</string>
+    <string name="new_chat_none">მომხმარებელი ვერ მოიძებნა</string>
+
+    <string name="backend_not_connected">სერვერი ჯერ არ არის დაკავშირებული — მუშაობს ლოკალურ რეჟიმში</string>
+
+    <string name="error_generic">შეცდომა</string>
+    <string name="error_server_connection">სერვერის კავშირის შეცდომა:</string>
+    <string name="error_server_not_configured">სერვერის მისამართი არ არის დაყენებული</string>
+
+    <string name="group_setting_change_failed">პარამეტრის შეცვლა ვერ მოხერხდა</string>
+    <string name="group_role_change_failed">როლის შეცვლა ვერ მოხერხდა</string>
+    <string name="group_set_username">დააყენეთ @username</string>
+    <string name="group_name_title">ჯგუფის სახელი</string>
+    <string name="group_rename_failed">სახელის გადარქმევა ვერ მოხერხდა</string>
+    <string name="group_username_hint">@group_username</string>
+    <string name="group_username_title">ჯგუფის მომხმარებლის სახელი</string>
+    <string name="group_username_save_failed">მომხმარებლის სახელის შენახვა ვერ მოხერხდა</string>
+    <string name="uploading_photo">მიმდინარეობს ფოტოს ატვირთვა…</string>
+    <string name="photo_upload_failed">ფოტოს ატვირთვა ვერ მოხერხდა</string>
+    <string name="photo_process_error">შეცდომა ფოტოს დამუშავებისას:</string>
+
+    <string name="msg_send_failed">გაგზავნა ვერ მოხერხდა</string>
+    <string name="encryption_error">დაშიფვრის შეცდომა:</string>
+    <string name="decrypt_failed_short">გაშიფვრა ვერ მოხერხდა</string>
+    <string name="preparing_file">მიმდინარეობს ფაილის მომზადება…</string>
+    <string name="file_upload_failed">ფაილის ატვირთვა ვერ მოხერხდა</string>
+    <string name="file_read_error">შეცდომა ფაილის წაკითხვისას:</string>
+    <string name="group_key_decrypt_failed">ჯგუფის გასაღების გაშიფვრა ვერ მოხერხდა</string>
+    <string name="group_admin_only_send">ამ ჯგუფში გამოქვეყნება მხოლოდ ადმინისტრატორებს შეუძლიათ</string>
+    <string name="peer_no_key_yet">ამ ადამიანს ჯერ არ აქვს დაშიფვრის გასაღები — სთხოვეთ გახსნას აპი და სცადოთ ხელახლა</string>
+
+    <string name="fab_new_chat">ახალი ჩატი</string>
+    <string name="fab_new_group">ახალი ჯგუფი</string>
+    <string name="pubkey_upload_failed">სერვერზე საჯარო გასაღების ატვირთვა ვერ მოხერხდა:</string>
+    <string name="pubkey_not_uploaded">გასაღები არ აიტვირთა სერვერზე</string>
+    <string name="keygen_failed">დაშიფვრის გასაღების შექმნა ვერ მოხერხდა</string>
+    <string name="keygen_create_failed">დაშიფვრის გასაღების შექმნა ვერ მოხერხდა</string>
+    <string name="ok">OK</string>
+    <string name="chat_unpin">ჩამაგრების მოხსნა</string>
+    <string name="chat_pin">პინი</string>
+    <string name="chat_archive">არქივი</string>
+    <string name="notif_enable">შეტყობინებების ჩართვა</string>
+    <string name="notif_disable">გამორთეთ შეტყობინებები</string>
+
+    <string name="contacts_in_app_header">კონტაქტები TALKSY-ზე</string>
+    <string name="searching_contacts">მიმდინარეობს კონტაქტების ძიება…</string>
+    <string name="no_phone_contacts">თქვენს კონტაქტებში ტელეფონის ნომრები ვერ მოიძებნა</string>
+    <string name="no_registered_contacts">თქვენი არცერთი კონტაქტი ჯერ არ არის Talksy-ზე</string>
+    <string name="grant_contacts_permission">მიეცით კონტაქტებს წვდომის უფლება, რომ ნახოთ ვინ არის უკვე Talksy-ზე — ან მოძებნეთ ვინმე ზემოთ</string>
+    <string name="search_results_header">ძიების შედეგები</string>
+    <string name="server_not_configured_settings">სერვერი არ არის კონფიგურირებული (პარამეტრები → სერვერი)</string>
+
+    <string name="last_seen_recently">ბოლოს ნახეს</string>
+    <string name="last_seen_online">ონლაინ</string>
+    <string name="last_seen_at_time">ბოლოს ნახე %s-ზე</string>
+    <string name="last_seen_yesterday_at">ბოლოს ნახეს გუშინ %s-ზე</string>
+    <string name="last_seen_date_format">d MMM \'at\' HH:mm</string>
+    <string name="last_seen_date_at">ბოლოს ნანახი %s</string>
+
+    <string name="profile_save_failed">შენახვა ვერ მოხერხდა</string>
+    <string name="image_read_failed">სურათის წაკითხვა ვერ მოხერხდა</string>
+    <string name="photo_updated">ფოტო განახლებულია</string>
+
+    <string name="server_not_set_hint">სერვერი არ არის დაყენებული — შეეხეთ კონფიგურაციისთვის</string>
+    <string name="server_label_prefix">სერვერი:</string>
+    <string name="server_address_title">სერვერის მისამართი</string>
+    <string name="server_address_message">შეიყვანეთ სარეზერვო სერვერის მისამართი. ემულატორისთვის: 10.0.2.2:5000. რეალური ტელეფონისთვის იმავე Wi-Fi-ზე: COMPUTER_IP:5000</string>
+    <string name="digits_suffix">ციფრები)</string>
+
+    <string name="downloading_file">ჩამოტვირთვა"</string>
+    <string name="file_download_failed">ფაილის ჩამოტვირთვა ვერ მოხერხდა</string>
+    <string name="no_app_to_open_file">ამ ფაილის გასახსნელად აპლიკაცია ვერ მოიძებნა</string>
+
+    <string name="my_groups_header">ჩემი ჯგუფები</string>
+    <string name="found_header">ნაპოვნია</string>
+    <string name="joined_group_prefix">თქვენ შეუერთდით ჯგუფს"</string>
+    <string name="join_group_failed">ჯგუფში გაწევრიანება ვერ მოხერხდა</string>
+
+    <string name="revoke_admin">გააუქმეთ ადმინისტრატორის უფლებები</string>
+    <string name="make_admin">გააკეთე ადმინი</string>
+    <string name="role_owner">მფლობელი</string>
+    <string name="role_admin">ადმინისტრატორი</string>
+    <string name="no_messages_yet">ჯერ არ არის შეტყობინებები</string>
+
+    <string name="notif_channel_name">სალაპარაკო შეტყობინებები</string>
+    <string name="notif_channel_desc">შეტყობინებები ახალი შეტყობინებების შესახებ Talksy ჩეთებში</string>
+    <string name="checking_new_messages">მიმდინარეობს ახალი შეტყობინებების შემოწმება</string>
+
+    <string name="file_open_failed">ფაილის გახსნა ვერ მოხერხდა</string>
+    <string name="file_too_big_prefix">ფაილი უფრო დიდია ვიდრე</string>
+    <string name="file_too_big_suffix">MB — ეს ჯერ არ არის მხარდაჭერილი</string>
+
+    <string name="enter_group_name">შეიყვანეთ ჯგუფის სახელი</string>
+    <string name="group_create_failed">ჯგუფის შექმნა ვერ მოხერხდა</string>
+    <string name="encryption_setup_error">დაშიფვრის დაყენების შეცდომა:</string>
+
+    <string name="profile_load_failed">პროფილის ჩატვირთვა ვერ მოხერხდა</string>
+    <string name="unblock">განბლოკვა</string>
+    <string name="block">დაბლოკვა</string>
+
+    <string name="server_not_configured_full">სერვერი არ არის კონფიგურირებული. გადადით პარამეტრებზე → სერვერზე და შეიყვანეთ სარეზერვო მისამართი (იხ. backend/README.md).</string>
+    <string name="sending_code">კოდის გაგზავნა…</string>
+    <string name="code_send_failed">კოდის გაგზავნა ვერ მოხერხდა</string>
+
+    <string name="size_bytes">ბ</string>
+    <string name="size_kb">%.0f კბაიტი</string>
+    <string name="size_mb">%.1f მბაიტი</string>
+
+    <string name="proxy_handshake_rejected">Talksy-proxy: სერვერმა უარყო ხელის ჩამორთმევა (კოდი</string>
+    <string name="proxy_encryption_error">Talksy-proxy დაშიფვრის შეცდომა:</string>
+
+    <string name="code_resend_failed">კოდის ხელახლა გაგზავნა ვერ მოხერხდა</string>
+    <string name="checking">მიმდინარეობს შემოწმება…</string>
+
+    <string name="unarchive">გაუქმება</string>
+
+    <string name="group_prefix">ჯგუფი:</string>
+
+    <string name="location_unknown">მდებარეობა უცნობია</string>
+
+    <string name="group_make_channel_title">არხი (ნაჩვენებია ძიებაში)</string>
+    <string name="group_make_channel_desc">როდესაც ჩართულია, ჯგუფის პოვნა შესაძლებელია სახელის მიხედვით ძიებაში — წინააღმდეგ შემთხვევაში მას მხოლოდ მოწვევით შეუერთდება</string>
+    <string name="group_private_title">პირადი ჯგუფი</string>
+    <string name="group_private_desc">როდესაც ჩართულია, ვერავინ შეუერთდება ჯგუფს, მაშინაც კი, თუ ის როგორმე იპოვის მას - მხოლოდ წევრის მოწვევით</string>
+
+    <string name="settings_e2e">ბოლოდან ბოლომდე დაშიფვრა (E2E)</string>
+    <string name="settings_e2e_desc">ნაგულისხმევად, შეტყობინებები დაშიფრულია სერვერის გასაღებით - საიმედო, მაგრამ სერვერს შეუძლია ტექნიკურად წაიკითხოს ისინი. ჩართეთ ეს ისე, რომ მხოლოდ სხვა ადამიანმა შეძლოს თქვენი შეტყობინებების გაშიფვრა; გაგზავნას შეიძლება ზოგჯერ დაელოდოს, სანამ მათ ექნებათ დაშიფვრის გასაღები</string>
+
+    <string name="email_spam_hint">თუ ელფოსტა არ ჩამოვა რამდენიმე წუთში, შეამოწმეთ თქვენი სპამის საქაღალდე</string>
+    <string name="code_sent_wait">გაგზავნილი (%ds)</string>
+
+    <string name="delete_for_me">წაშალე ჩემთვის</string>
+    <string name="delete_for_everyone">წაშლა ყველასთვის</string>
+    <string name="delete_for_everyone_confirm">ეს წაშლის შეტყობინებას ჩეთში ყველასთვის, მისი გაუქმების გარეშე. წაშალო მაინც?</string>
+    <string name="message_deleted">შეტყობინება წაიშალა</string>
+
+    <string name="settings_section_appearance">გარეგნობა</string>
+    <string name="settings_section_security">უსაფრთხოება</string>
+    <string name="settings_section_account">ანგარიში და ქსელი</string>
+
+    <string name="call_incoming">შემომავალი ზარი…</string>
+    <string name="call_calling">ირეკება…</string>
+    <string name="call_connecting">დაკავშირება…</string>
+    <string name="call_connected">დაკავშირებულია</string>
+    <string name="call_connection_lost">კავშირი დაიკარგა</string>
+    <string name="call_permission_denied">საჭიროა მიკროფონზე წვდომა (და კამერა ვიდეოზარებისთვის)</string>
+    <string name="call_failed">ზარის დაწყება ვერ მოხერხდა</string>
+    <string name="call_ended_by_peer">მეორემ ზარი დაასრულა</string>
+    <string name="notif_accept">მიღება</string>
+    <string name="notif_decline">უარყოფა</string>
+    <string name="call_channel_name">რეკავს</string>
+    <string name="typing_now">აკრეფა…</string>
+    <string name="menu_copy_text">ტექსტის კოპირება</string>
+    <string name="menu_save_downloads">შენახვა ჩამოტვირთვებში</string>
+    <string name="menu_forward">წინ</string>
+    <string name="menu_delete">წაშლა</string>
+    <string name="text_copied">ტექსტი დაკოპირებულია</string>
+    <string name="forward_to">წინ…</string>
+    <string name="forwarded_ok">გადაგზავნა</string>
+    <string name="msg_status_sent">გაგზავნილი</string>
+    <string name="msg_status_read">წაიკითხეთ</string>
+    <string name="msg_reply">პასუხი</string>
+    <string name="msg_edit">რედაქტირება</string>
+    <string name="msg_pin">პინი</string>
+    <string name="msg_unpin">ჩამაგრების მოხსნა</string>
+    <string name="reply_title">პასუხი</string>
+    <string name="edit_title">შეტყობინების რედაქტირება</string>
+    <string name="pinned_title">ჩამაგრებული შეტყობინება</string>
+    <string name="edited_mark">რედაქტირებულია</string>
+    <string name="reply_original_missing">შეტყობინება</string>
+    <string name="logo_text">ლაპარაკი</string>
+    <string name="upload_progress">%1$s %2$s მბაიტიდან · %3$d%%</string>
+    <string name="upload_too_big">ფაილი ძალიან დიდია (მაქს. %1$d მბაიტი)</string>
+    <string name="upload_cancel_confirm">გააუქმოთ ამ ფაილის გაგზავნა?</string>
+    <string name="upload_cancel_yes">ატვირთვის გაუქმება</string>
+    <string name="story_you">შენ</string>
+    <string name="story_photo">ფოტო</string>
+    <string name="story_video">ვიდეო</string>
+    <string name="story_limit">შეგიძლიათ გამოაქვეყნოთ 3-მდე მოთხრობა</string>
+    <string name="story_published">სიუჟეტი გამოქვეყნდა</string>
+    <string name="story_reply_hint">პასუხი…</string>
+    <string name="story_reply_sent">პასუხი გაგზავნილია</string>
+    <string name="story_reply_label">სიუჟეტზე პასუხი</string>
+    <string name="story_delete_confirm">წაშალოთ ეს ამბავი?</string>
+    <string name="story_delete_btn">წაშლა</string>
+    <string name="story_deleted">ამბავი წაშლილია</string>
+    <string name="story_load_failed">ამბის ჩატვირთვა ვერ მოხერხდა</string>
+    <string name="story_just_now">მხოლოდ ახლა</string>
+    <string name="story_min_ago">%1$d წუთის წინ</string>
+    <string name="story_hours_ago">%1$d საათის წინ</string>
+    <string name="story_views_title">ნახვები: %1$d</string>
+    <string name="story_no_views">ჯერ ნახვები არ არის</string>
+    <string name="who_write_title">ვისაც შეუძლია მომწეროს</string>
+    <string name="who_write_all">ყველას</string>
+    <string name="who_write_contacts">მხოლოდ მათ, ვისაც მივწერე</string>
+    <string name="who_write_nobody">არავინ</string>
+    <string name="who_write_saved">შენახულია</string>
+    <string name="who_write_hint">ვრცელდება შეტყობინებებსა და ზარებზე. ადამიანები, რომლებსაც არ უშვებენ, ნახავენ შეტყობინებას.</string>
+    <string name="channel_subscribe">გამოწერა</string>
+    <string name="channel_unsubscribe">გამოწერის გაუქმება</string>
+    <string name="channel_subscribed">თქვენ გამოიწერეთ</string>
+    <string name="channel_unsubscribed">თქვენ გააუქმეთ გამოწერა</string>
+    <string name="channel_unsubscribe_confirm">გააუქმეთ ამ არხის გამოწერა?</string>
+    <string name="members_title_count">MEMBERS · %1$d</string>
+    <string name="members_visible_title">წევრების ჩვენება ყველას</string>
+    <string name="members_visible_desc">თუ გამორთულია, მხოლოდ მფლობელს და ადმინებს შეუძლიათ არხის წევრების ნახვა</string>
+    <string name="members_hidden_note">წევრების სია დამალულია არხის მფლობელის მიერ</string>
+    <string name="notif_reply">პასუხი</string>
+    <string name="notif_reply_hint">შეტყობინება…</string>
+    <string name="notif_reply_sent">გაგზავნილი: %1$s</string>
+    <string name="notif_reply_failed">გაგზავნა ვერ მოხერხდა</string>
+    <string name="notif_hangup">გათიშე</string>
+    <string name="call_in_progress">ზარი მიმდინარეობს</string>
+    <string name="call_video_in_progress">ვიდეო ზარი მიმდინარეობს</string>
+    <string name="call_ongoing_channel_name">მიმდინარე ზარი</string>
+    <string name="call_go_to_chats">გადადით ჩეთებზე</string>
+
+    <string name="cancel">გაუქმება</string>
+    <string name="saved">შენახულია</string>
+    <string name="copy">კოპირება</string>
+    <string name="copied">კოპირებულია</string>
+
+    <string name="botfather_greeting">გამარჯობა! მე დაგეხმარებით ამ მესინჯერისთვის ბოტის შექმნასა და კონფიგურაციაში.</string>
+    <string name="botfather_menu_prompt">რის გაკეთებას ისურვებდით?</string>
+    <string name="botfather_btn_create">შექმენით ბოტი</string>
+    <string name="botfather_btn_my_bots">ჩემი ბოტები</string>
+    <string name="botfather_ask_name">რა უნდა ერქვას ბოტს? ეს არის სახელი, რომელსაც ხალხი დაინახავს შეტყობინების გაგზავნისას.</string>
+    <string name="botfather_name_too_long">ეს სახელი ძალიან გრძელია (მაქს. 64 სიმბოლო). სცადეთ რაიმე უფრო მოკლე.</string>
+    <string name="botfather_ask_username">ახლა აირჩიეთ ბოტის მომხმარებლის სახელი: 5-32 სიმბოლო, ლათინური ასოები/ციფრები/ხაზგასმული და ის უნდა დასრულდეს \"bot\"-ით (მაგ. my_cool_bot).</string>
+    <string name="botfather_ask_username_again">სცადეთ სხვა მომხმარებლის სახელი.</string>
+    <string name="botfather_done">შესრულებულია! ბოტი \"%1$s\" (%2$s) შეიქმნა. აქ არის მისი ნიშანი — თქვენი ბოტის კოდს სჭირდება ის სერვერთან, როგორც ბოტის სასაუბროდ. შეინახეთ იგი საიდუმლოდ, პაროლის მსგავსად.</string>
+    <string name="botfather_copy_token">დააკოპირეთ ჟეტონი</string>
+    <string name="botfather_open_settings">ბოტის პარამეტრები</string>
+    <string name="botfather_what_next">რა არის შემდეგი?</string>
+
+    <string name="my_bots_title">ჩემი ბოტები</string>
+    <string name="my_bots_empty">ჯერ ბოტები არ არის. შეეხეთ \"+\"-ს, რომ შექმნათ თქვენი პირველი BotFather-ის მეშვეობით.</string>
+
+    <string name="bot_token_label">BOT TOKEN</string>
+    <string name="bot_show_token">ჩვენება</string>
+    <string name="bot_hide_token">დამალვა</string>
+    <string name="bot_regenerate_token">ჟეტონის რეგენერაცია</string>
+    <string name="bot_regenerate_token_hint">ძველი ჟეტონი მაშინვე შეწყვეტს მუშაობას — თქვენ უნდა განაახლოთ თქვენი ბოტის კოდი ახლით.</string>
+    <string name="bot_regenerate_token_confirm">ძველი ჟეტონი დაუყოვნებლივ შეწყვეტს მუშაობას. ბოტის კოდი, რომელსაც თქვენ აწარმოებთ, უნდა განახლდეს ახალი ტოკენით. გაგრძელება?</string>
+    <string name="bot_token_updated">ჟეტონი რეგენერირებულია</string>
+
+    <string name="bot_name_label">NAME</string>
+    <string name="bot_bio_label">აღწერა</string>
+    <string name="bot_name_required">შეიყვანეთ ბოტის სახელი</string>
+
+    <string name="bot_webhook_label">WEBHOOK (არასავალდებულო)</string>
+    <string name="bot_webhook_hint">ნაგულისხმევად, ბოტი თავად აკითხავს სერვერს (getUpdates) – დასაყენებელი არაფერია, მუშაობს საჯარო IP-ის გარეშეც. ვებჰუკი საჭიროა მხოლოდ იმ შემთხვევაში, თუ თქვენი ბოტის კოდი განთავსებულია საჯარო https მისამართზე და გსურთ, რომ სერვერმა შეტყობინებები პირდაპირ გადასცეს მას.</string>
+    <string name="bot_webhook_clear">ვებჰუკის წაშლა</string>
+
+    <string name="bot_docs_label">როგორ დააკავშიროთ თქვენი ბოტი</string>
+    <string name="bot_docs_intro">ბოტის კოდი იწერება პითონში და მუშაობს თქვენს საკუთარ მანქანაზე - არა მესინჯერში. აქ არის მინიმალური სამუშაო მაგალითი getUpdates-ის გამოყენებით:</string>
+    <string name="bot_docs_code_sample"><![CDATA[import requests, time
+
+TOKEN = "%1$s"
+BASE = "SERVER/bot" + TOKEN
+
+offset = 0
+while True:
+    r = requests.get(f"{BASE}/getUpdates", params={"offset": offset, "timeout": 25}).json()
+    for upd in r["result"]:
+        offset = upd["update_id"] + 1
+        msg = upd["message"]
+        chat_id = msg["chat"]["id"]
+        text = msg["text"]
+        requests.post(f"{BASE}/sendMessage",
+            json={"chat_id": chat_id, "text": f"You said: {text}"})]]></string>
+
+    <string name="bot_delete">წაშალე ბოტი</string>
+    <string name="bot_delete_confirm">ბოტი და მისი ჟეტონი სამუდამოდ წაიშლება. მასთან ჩატის ისტორია დარჩება. გაგრძელება?</string>
+    <string name="bot_deleted">ბოტი წაშლილია</string>
+    <string name="bot_chat_subtitle">ბოტი</string>
+    <string name="mention_not_found">ვერაფერი მოიძებნა</string>
+    <string name="blocked_by_peer">ეს მომხმარებელი არ გაძლევს მათ შეტყობინების გაგზავნის საშუალებას</string>
+    <string name="bot_add_to_group">დაამატეთ ბოტი ჯგუფში</string>
+    <string name="bot_added_to_group">ჯგუფს დაემატა ბოტი</string>
+    <string name="add_participant">დაამატეთ მონაწილე</string>
+    <string name="member_added">მონაწილემ დაამატა</string>
+    <string name="pick_group_for_bot">აირჩიეთ ჯგუფი</string>
+    <string name="bot_mode_webhook">ვებჰუკი</string>
+    <string name="bot_mode_mini_app">მინი აპლიკაცია</string>
+    <string name="bot_response_mode">როგორ პასუხობს ბოტი</string>
+    <string name="mini_app_url_hint">your-miniapp.example</string>
+    <string name="mini_app_name_hint">მინი აპლიკაციის სახელი</string>
+    <string name="open_bot_mini_app">გახსენით მინი აპლიკაცია</string>
+    <string name="privacy_section_title">კონფიდენციალურობა</string>
+    <string name="privacy_who_can_write">ვისაც შეუძლია მომწეროს</string>
+    <string name="liquid_glass_toggle">თხევადი მინა</string>
+    <string name="liquid_glass_toggle_sub">iOS/Telegram-ის სტილის შუშის ინტერფეისი</string>
+    <string name="switch_account_title">ანგარიშები</string>
+    <string name="add_account">ანგარიშის დამატება</string>
+    <string name="max_accounts_hint">შეგიძლიათ ერთდროულად შეინახოთ %d ანგარიშები</string>
+    <string name="account_switched">ანგარიში შეიცვალა</string>
+    <string name="settings_accounts">ანგარიშები</string>
+    <string name="settings_accounts_sub">3-მდე ანგარიში, სწრაფი გადართვა</string>
+    <string name="spoiler_menu_item">დამალვა როგორც სპოილერი</string>
+    <string name="spoiler_hint">შეეხეთ გამოსავლენად</string>
+    <string name="video_speed">სიჩქარე</string>
+    <string name="video_quality">ხარისხიანი</string>
+    <string name="video_quality_auto">ავტო</string>
+    <string name="video_quality_high">მაღალი</string>
+    <string name="video_quality_medium">საშუალო (მონაცემთა დამზოგავი)</string>
+    <string name="send_blurred">ბუნდოვანი გაგზავნა</string>
+    <string name="media_picker_title">ფოტოები და ვიდეოები</string>
+    <string name="media_picker_recents">ბოლო</string>
+    <string name="media_picker_permission">გალერეაზე წვდომის დაშვება</string>
+    <string name="media_picker_empty">ვერაფერი მოიძებნა</string>
+    <string name="video_loading_percent">%d%%</string>
+
+    <string name="logout_confirm">გამოხვალთ ამ მოწყობილობიდან?</string>
+
+    <string name="settings_section_chat">ჩეთები და მედია</string>
+    <string name="settings_wallpaper">ჩატის ფონი</string>
+    <string name="settings_wallpaper_sub">ფონის ფერი ჩეთებისთვის, ან თქვენი საკუთარი ფოტოსთვის</string>
+    <string name="settings_font_size">შრიფტის ზომა</string>
+    <string name="settings_auto_download">მედიის ავტომატური ჩამოტვირთვა</string>
+    <string name="settings_auto_download_sub">როდის უნდა ჩამოტვირთოთ ფოტოები და ვიდეო ჩეთებში</string>
+
+    <string name="settings_section_data">DATA</string>
+    <string name="settings_storage">შენახვა</string>
+    <string name="settings_storage_sub">ქეშის ზომა, გადმოწერილი ფაილების გასუფთავება</string>
+    <string name="settings_blocked">დაბლოკილი მომხმარებლები</string>
+    <string name="settings_blocked_sub">ადამიანები, რომლებიც თქვენ დაბლოკეთ</string>
+
+    <string name="wallpaper_default">ნაგულისხმევი</string>
+    <string name="wallpaper_custom">შენი ფოტო</string>
+    <string name="wallpaper_indigo">ინდიგო</string>
+    <string name="wallpaper_sunset">მზის ჩასვლა</string>
+    <string name="wallpaper_ocean">ოკეანე</string>
+    <string name="wallpaper_forest">ტყე</string>
+    <string name="wallpaper_rose">ვარდი</string>
+    <string name="wallpaper_midnight">შუაღამე</string>
+    <string name="wallpaper_saved">ფონი შენახულია</string>
+
+    <string name="font_size_small">პატარა</string>
+    <string name="font_size_medium">ნაგულისხმევი</string>
+    <string name="font_size_large">დიდი</string>
+
+    <string name="auto_download_wifi">მხოლოდ Wi-Fi</string>
+    <string name="auto_download_always">ყოველთვის</string>
+    <string name="auto_download_never">არასოდეს</string>
+
+    <string name="storage_cache_desc">გამოიყენება გადმოწერილი ფოტოების, ვიდეოების და ფაილების მიერ</string>
+    <string name="storage_clear_cache">ქეშის გასუფთავება</string>
+    <string name="storage_clear_cache_hint">ფაილები წაიშლება ამ მოწყობილობიდან, მაგრამ ხელმისაწვდომი დარჩება ჩეთებში — საჭიროების შემთხვევაში ისინი ხელახლა ჩამოიტვირთება.</string>
+    <string name="storage_cache_cleared">ქეში გასუფთავდა</string>
+
+    <string name="blocked_empty">არ არის დაბლოკილი მომხმარებლები</string>
+    <string name="blocked_unblock_confirm">განბლოკოთ ეს მომხმარებელი? ისინი შეძლებენ შეტყობინებების გაგზავნას და თქვენი პროფილის ხელახლა ნახვას.</string>
+
+    <string name="profile_stories">ისტორიები</string>
+    <string name="profile_stories_view">ხედი</string>
+    <string name="profile_media">მედია</string>
+    <string name="profile_gifts">საჩუქრები</string>
+    <string name="profile_gifts_sub">გაუგზავნეთ ერთმანეთს საჩუქრები ჩატში</string>
+    <string name="profile_gifts_toast">საჩუქრები მალე მოვა Talksy-ში</string>
+    <string name="profile_soon">მალე</string>
+
+    <string name="miniapp_invalid">ამ ბოტს არ აქვს მინი აპლიკაცია</string>
+    <string name="miniapp_default_title">მინი აპლიკაცია</string>
+    <string name="miniapp_load_error">მინი აპის (%1$s) ჩატვირთვა ვერ მოხერხდა. შეამოწმეთ თქვენი კავშირი და სცადეთ ხელახლა.</string>
+    <string name="miniapp_open">გახსენით</string>
+    <string name="bot_start">დაწყება</string>
+    <plurals name="bot_users_count">
+        <item quantity="one">%d მომხმარებელი</item>
+        <item quantity="other">%d მომხმარებლები</item>
+    </plurals>
+    <string name="attach_gallery">გალერეა</string>
+    <string name="attach_file">ფაილი</string>
+    <string name="attach_send_plain">გაგზავნა</string>
+
+    <string name="connecting">დაკავშირება</string>
+    <string name="connecting_lower">დამაკავშირებელი</string>
+    <string name="no_connection">არანაირი კავშირი</string>
+    <string name="needs_internet">საჭიროა ინტერნეტი</string>
+    <string name="reaction_wait_sent">თქვენ შეგიძლიათ რეაგირება შეტყობინების გაგზავნის შემდეგ</string>
+    <string name="group_subtitle">ჯგუფი</string>
+    <string name="channel_subtitle">არხი</string>
+
+    <string name="record_voice">ხმოვანი შეტყობინება</string>
+    <string name="record_round">ვიდეო შეტყობინება</string>
+    <string name="mode_voice_hint">ხანგრძლივად ხმოვანი შეტყობინების ჩასაწერად</string>
+    <string name="mode_round_hint">ხანგრძლივად დააჭირეთ ვიდეო შეტყობინების ჩასაწერად</string>
+    <string name="record_slide_cancel">‹ გაასრიალეთ მარცხნივ გასაუქმებლად</string>
+    <string name="record_release_cancel">გაათავისუფლეთ გასაუქმებლად</string>
+    <string name="record_up_to_lock">გადაფურცლეთ ზემოთ ჩაწერის გასაგრძელებლად</string>
+    <string name="record_too_short">ჩაწერა ძალიან მოკლეა</string>
+    <string name="record_failed">ჩაწერა ვერ დაიწყო</string>
+    <string name="record_hold_again">ახლა ისევ დააჭირეთ ღილაკს</string>
+    <string name="cancel_caps">გაუქმება</string>
+    <string name="voice_load_failed">ხმოვანი შეტყობინების ჩატვირთვა ვერ მოხერხდა</string>
+    <string name="msg_type_voice">ხმოვანი შეტყობინება</string>
+    <string name="msg_type_round">ვიდეო შეტყობინება</string>
+    <string name="close">დახურვა</string>
+    <string name="more">მეტი</string>
+    <string name="miniapp_minimize">მინიმიზაცია</string>
+    <string name="link_open_in_browser">გახსენით ბრაუზერში</string>
+    <string name="link_copy">დააკოპირეთ ბმული</string>
+    <string name="link_copied">ბმული კოპირებულია</string>
+    <string name="link_share">გააზიარეთ</string>
+    <string name="link_reload">გადატვირთვა</string>
+    <string name="link_load_error">გვერდი ვერ ჩაიტვირთა (%1$s)</string>
+    <string name="link_blocked">ამ ბმულის გახსნა შეუძლებელია</string>
+    <string name="miniapp_return">მინი აპლიკაციაში დაბრუნება</string>
+    <string name="miniapp_system_badge">სისტემის აპლიკაცია</string>
+    <string name="settings_links_in_app">გახსენით ბმულები აპლიკაციაში</string>
+    <string name="settings_links_in_app_sub">გამორთულია — ბმულები იხსნება თქვენს მთავარ ბრაუზერში. სისტემის მინი აპები ყოველთვის იხსნება Talksy-ში.</string>
+    <string name="nav_chats">ჩეთები</string>
+    <string name="nav_contacts">კონტაქტები</string>
+    <string name="nav_settings">პარამეტრები</string>
+    <string name="nav_profile">პროფილი</string>
+    <string name="settings_privacy">კონფიდენციალურობა</string>
+    <string name="settings_privacy_sub">ვისაც შეუძლია ნახოს თქვენი მონაცემები და მოგწეროთ</string>
+    <string name="priv_phone">ტელეფონის ნომერი</string>
+    <string name="priv_username">მომხმარებლის სახელი</string>
+    <string name="priv_last_seen">ბოლოს ნანახი</string>
+    <string name="priv_photo">პროფილის ფოტოები</string>
+    <string name="priv_bio">შესახებ</string>
+    <string name="priv_messages">შეტყობინებები</string>
+    <string name="priv_group_invites">ჯგუფები და არხები</string>
+    <string name="priv_calls">რეკავს</string>
+    <string name="priv_voice">ხმოვანი და ვიდეო შეტყობინებები</string>
+    <string name="priv_everybody">ყველას</string>
+    <string name="priv_contacts">ჩემი კონტაქტები</string>
+    <string name="priv_nobody">არავინ</string>
+    <string name="priv_group_invites_note">თუ აკრძალავთ თქვენს დამატებას ჯგუფებში, ხალხი გამოგიგზავნით მოსაწვევს - თქვენ გადაწყვიტეთ შეუერთდეთ თუ არა.</string>
+    <string name="priv_invites">ჯგუფური მოსაწვევები</string>
+    <string name="priv_invites_sub">მოსაწვევები იმ ადამიანებისგან, რომლებიც პირდაპირ ვერ დაგამატებენ</string>
+    <string name="invites_empty">არ არის მოსაწვევები</string>
+    <string name="invites_banner">ჯგუფური მოსაწვევები: %1$d</string>
+    <string name="invite_accept">მიღება</string>
+    <string name="invite_decline">უარყოფა</string>
+    <string name="invite_accepted">თქვენ შეუერთდით ჯგუფს</string>
+    <string name="invite_group_from">მოწვეული %1$s · %2$d წევრები</string>
+    <string name="invite_channel_from">მოწვეული %1$s · %2$d აბონენტების მიერ</string>
+    <string name="pub_tab">პოსტები</string>
+    <string name="pub_archive_tab">გამოაქვეყნეთ არქივი</string>
+    <string name="pub_empty">პოსტები ჯერ არ არის</string>
+    <string name="pub_empty_sub">თქვენ მიერ გაზიარებული ფოტოები და ვიდეოები აქ გამოჩნდება.</string>
+    <string name="pub_archive_empty">არქივი ცარიელია</string>
+    <string name="pub_archive_empty_sub">ვადაგასული ისტორიები მხოლოდ თქვენთვისაა ხილული, თუ არ გამოაქვეყნებთ მათ თქვენს პროფილში.</string>
+    <string name="pub_add">დამატება</string>
+    <string name="pub_delete_title">წაშალოთ არქივიდან?</string>
+    <string name="pub_delete_msg">პოსტი სამუდამოდ წაიშლება.</string>
+    <string name="storage_title">შენახვის გამოყენება</string>
+    <string name="storage_sub">Talksy იყენებს ამდენ ადგილს თქვენს მოწყობილობაზე</string>
+    <string name="storage_clear_all">ქეშის გასუფთავება %1$s</string>
+    <string name="storage_clear">წმინდა</string>
+    <string name="storage_clear_cat">წაიშლება: %1$s</string>
+    <string name="storage_clear_title">გაასუფთავო ქეში?</string>
+    <string name="storage_clear_msg">ფაილები რჩება სერვერზე — საჭიროების შემთხვევაში შეგიძლიათ ხელახლა ჩამოტვირთოთ.</string>
+    <string name="storage_cloud_note">ყველა მედია რჩება Talksy ღრუბელში, შეგიძლიათ ხელახლა ჩამოტვირთოთ ნებისმიერ დროს.</string>
+    <string name="storage_auto_title">ქეშირებული მედიის ავტომატური წაშლა</string>
+    <string name="storage_ttl">შეინახეთ ქეში ამისთვის</string>
+    <string name="storage_max">ქეშის მაქსიმალური ზომა</string>
+    <string name="storage_unlimited">შეუზღუდავი</string>
+    <string name="storage_auto_note">ფაილები, რომლებიც არ გაგიხსნიათ ამ პერიოდის განმავლობაში, ან ყველაზე ძველი, როდესაც ლიმიტი გადაჭარბებულია, წაიშლება მოწყობილობიდან.</string>
+    <string name="ttl_1d">1 დღე</string>
+    <string name="ttl_1w">1 კვირა</string>
+    <string name="ttl_1m">1 თვე</string>
+    <string name="ttl_3m">3 თვე</string>
+    <string name="ttl_never">არასოდეს</string>
+    <string name="cat_video">ვიდეო</string>
+    <string name="cat_files">ფაილები</string>
+    <string name="cat_photo">ფოტოები</string>
+    <string name="cat_voice">ხმოვანი შეტყობინებები</string>
+    <string name="cat_stickers">სტიკერები და emoji</string>
+    <string name="cat_other">სხვა</string>
+    <string name="cat_messages">შეტყობინებები</string>
+    <string name="data_title">მონაცემთა გამოყენება</string>
+    <string name="data_title_sub">რამდენი გაიგზავნა და მიიღო</string>
+    <string name="net_all">ყველა</string>
+    <string name="net_mobile">მობილური</string>
+    <string name="net_wifi">Wi-Fi</string>
+    <string name="net_roaming">როუმინგი</string>
+    <string name="data_since">სტატისტიკა %1$s-დან</string>
+    <string name="data_tap_hint">დეტალების სანახავად შეეხეთ რიგს.</string>
+    <string name="data_total">მთლიანი მოძრაობა</string>
+    <string name="data_sent">გაგზავნილი</string>
+    <string name="data_received">მიღებული</string>
+    <string name="data_note">ითვლის აპის საკუთარ ტრაფიკს: შეტყობინებებს, ფოტოებს, ვიდეოებს, ფაილებს და ხმოვან შეტყობინებებს.</string>
+    <string name="data_auto_hint">შეცვალეთ მობილური მონაცემების შესანახად</string>
+    <string name="data_reset">სტატისტიკის გადატვირთვა</string>
+    <string name="data_reset_msg">ტრაფიკის მრიცხველები აღდგება.</string>
+    <string name="data_sent_received">გაგზავნილი: %1$s · მიღებული: %2$s</string>
+    <string name="delete">წაშლა</string>
+    <string name="devices_title">მოწყობილობები</string>
+    <string name="devices_this">ეს მოწყობილობა</string>
+    <string name="devices_active">აქტიური სესიები</string>
+    <string name="devices_end_others">შეწყვიტე ყველა სხვა სესია</string>
+    <string name="devices_end_others_note">გადით ყველა მოწყობილობაზე, გარდა ამ ერთისა.</string>
+    <string name="devices_end_others_confirm">ყველა სხვა მოწყობილობა გამოვა. შეგიძლიათ ხელახლა შეხვიდეთ ელფოსტის კოდით.</string>
+    <string name="devices_end_session">სესიის შეწყვეტა</string>
+    <string name="devices_active_note">შეგიძლიათ შეხვიდეთ Talksy-ში სხვა მოწყობილობებზე — ყველა აქტიური სესია აქ არის ჩამოთვლილი. შეეხეთ სესიას მისი პარამეტრების შესაცვლელად.</string>
+    <string name="devices_none">სხვა აქტიური სესიები არ არის.</string>
+    <string name="devices_auto_title">სესიების ავტომატურად შეწყვეტა</string>
+    <string name="devices_auto_if">თუ არააქტიურია ამისთვის</string>
+    <string name="devices_auto_note">თუ თქვენ არ იყენებთ მოწყობილობას ამაზე მეტი ხნის განმავლობაში, მისი სესია ავტომატურად დასრულდება.</string>
+    <string name="devices_1w">1 კვირა.</string>
+    <string name="devices_1m">1 თვე.</string>
+    <string name="devices_3m">3 თვე.</string>
+    <string name="devices_6m">6 თვე.</string>
+    <string name="devices_1y">1 წ.</string>
+    <string name="devices_online">ონლაინ</string>
+    <string name="devices_today_at">დღეს %1$s-ზე</string>
+    <string name="devices_yesterday_at">გუშინ %1$s-ზე</string>
+    <string name="devices_app">განაცხადი</string>
+    <string name="devices_geo">მდებარეობა IP მისამართზე დაყრდნობით</string>
+    <string name="devices_accept_secret">მიიღეთ საიდუმლო ჩეთები</string>
+    <string name="devices_accept_secret_sub">გამოიყენეთ ეს მოწყობილობა საიდუმლო (E2E) ჩეთებისთვის</string>
+    <string name="devices_accept_calls">მიიღეთ ზარები</string>
+    <string name="devices_accept_calls_sub">გამოიყენეთ ეს მოწყობილობა ზარებისთვის</string>
+    <string name="priv_archive">პუბლიკაციების არქივი</string>
+    <string name="pub_archive_hidden">ამ მომხმარებელმა დამალა თავისი პუბლიკაციების არქივი</string>
+    <string name="pub_empty_other">ფოტოები და ვიდეოები, რომლებსაც ეს ადამიანი აზიარებს, აქ გამოჩნდება.</string>
+    <string name="pub_archive_empty_other">ამ ადამიანს არ აქვს ძველი პუბლიკაციები.</string>
+
+    <string name="account_ttl_12">12 თვის უმოქმედობის შემდეგ</string>
+    <string name="account_ttl_24">24 თვის უმოქმედობის შემდეგ</string>
+    <string name="account_ttl_6">6 თვის უმოქმედობის შემდეგ</string>
+    <string name="account_ttl_title">ანგარიშის ავტომატური წაშლა</string>
+    <string name="applock_change_pin">PIN-ის შეცვლა</string>
+    <string name="applock_disable">დაბლოკვის გამორთვა</string>
+    <string name="applock_disable_biometric">ბიომეტრიის გამორთვა</string>
+    <string name="applock_disabled">დაბლოკვა გამორთულია</string>
+    <string name="applock_enable_biometric">ბიომეტრიის ჩართვა</string>
+    <string name="applock_off">გამორთულია</string>
+    <string name="applock_pin_bio">PIN და ბიომეტრია</string>
+    <string name="applock_pin_only">მხოლოდ PIN</string>
+    <string name="applock_set_pin">PIN-ის დაყენება</string>
+    <string name="applock_title">PIN და ბიომეტრია</string>
+    <string name="attach_contact">კონტაქტი</string>
+    <string name="attach_empty">აქ ჯერ არ არის ფოტოები ან ვიდეოები</string>
+    <string name="attach_location">მდებარეობა</string>
+    <string name="attach_music">მუსიკა</string>
+    <string name="attach_permission_btn">წვდომის დაშვება</string>
+    <string name="attach_permission_hint">თქვენი ფოტოებისა და ვიდეოების საჩვენებლად საჭიროა გალერეაზე წვდომა</string>
+    <string name="attach_poll">გამოკითხვა</string>
+    <string name="attach_soon">მალე იქნება</string>
+    <string name="attach_wallet">საფულე</string>
+    <string name="chat_delete">ჩატის წაშლა</string>
+    <string name="chat_delete_for_everyone">ყველასთვის წაშლა</string>
+    <string name="chat_delete_for_me">ჩემთვის წაშლა</string>
+    <string name="chat_you_label">თქვენ</string>
+    <string name="draft_label">შავი ვარიანტი:</string>
+    <string name="favorite_added">რჩეულებში დაემატა</string>
+    <string name="favorite_removed">რჩეულებიდან წაიშალა</string>
+    <string name="favorites_empty">აქ ჯერ არაფერია.\nაირჩიეთ შეტყობინება და დააჭირეთ „რჩეულებში დამატებას“</string>
+    <string name="favorites_remove">წაშლა</string>
+    <string name="favorites_remove_confirm">წაიშალოს შეტყობინება რჩეულებიდან?</string>
+    <string name="favorites_sub">შენახული შეტყობინებები</string>
+    <string name="favorites_title">რჩეულები</string>
+    <string name="language_title">ენა</string>
+    <string name="lock_biometric_title">Talksy-ის განბლოკვა</string>
+    <string name="lock_create_pin">შექმენით PIN</string>
+    <string name="lock_enter_pin">შეიყვანეთ PIN</string>
+    <string name="lock_mismatch">PIN-ები არ ემთხვევა, სცადეთ ხელახლა</string>
+    <string name="lock_repeat_pin">გაიმეორეთ PIN</string>
+    <string name="lock_setup_hint">6 ციფრი</string>
+    <string name="lock_too_many">ძალიან ბევრი მცდელობაა. სცადეთ ხელახლა %1$d წმ-ში</string>
+    <string name="lock_use_pin">PIN-ის შეყვანა</string>
+    <string name="lock_wrong_pin">არასწორი PIN</string>
+    <string name="menu_favorite">რჩეულებში დამატება</string>
+    <string name="menu_unfavorite">რჩეულებიდან წაშლა</string>
+    <string name="send_disappearing">ქრობადი შეტყობინებები</string>
+    <string name="send_schedule">მოგვიანებით გაგზავნა</string>
+    <string name="send_schedule_done">შეტყობინება გაიგზავნება არჩეულ დროს</string>
+    <string name="send_schedule_past">აირჩიეთ მომავალი დრო</string>
+    <string name="session_terminate_confirm">დასრულდეს სესია ამ მოწყობილობაზე?</string>
+    <string name="sticker_gif_soon">GIF — მალე იქნება</string>
+    <string name="sticker_no_packs">სტიკერების პაკეტები ჯერ არ არის.\nდააჭირეთ ＋-ს საკუთარის შესაქმნელად</string>
+    <string name="sticker_tab_emoji">ემოჯი</string>
+    <string name="sticker_tab_gif">GIF</string>
+    <string name="sticker_tab_stickers">სტიკერები</string>
+    <string name="ttl_day">1 დღე</string>
+    <string name="ttl_hour">1 საათი</string>
+    <string name="ttl_month">30 დღე</string>
+    <string name="ttl_off">გამორთულია</string>
+    <string name="ttl_saved">პარამეტრი შენახულია</string>
+    <string name="ttl_week">1 კვირა</string>
+</resources>

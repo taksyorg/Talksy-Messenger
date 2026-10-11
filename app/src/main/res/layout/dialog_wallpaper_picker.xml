@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="4"
+    android:padding="8dp"
+    android:alignmentMode="alignMargins">
+
+    <TextView
+        android:id="@+id/wp_default"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_panel"
+        android:gravity="center"
+        android:text="—"
+        android:textColor="@color/text2"
+        android:textSize="11sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/wp_indigo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/wallpaper_indigo"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/wp_sunset"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/wallpaper_sunset"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/wp_ocean"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/wallpaper_ocean"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/wp_forest"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/wallpaper_forest"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/wp_rose"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/wallpaper_rose"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/wp_midnight"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/wallpaper_midnight"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/wp_upload"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="6dp"
+        android:background="@drawable/bg_panel"
+        android:gravity="center"
+        android:text="＋"
+        android:textColor="@color/accent"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true" />
+
+</GridLayout>

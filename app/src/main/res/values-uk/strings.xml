@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Talksy</string>
+    <string name="app_sub">Messenger</string>
+
+    <string name="auth_phone_title">Введіть свій номер телефону</string>
+    <string name="auth_phone_sub">Ми надішлемо вам код підтвердження через SMS</string>
+    <string name="auth_phone_hint">+1 555 000 0000</string>
+    <string name="auth_continue">Продовжити</string>
+    <string name="auth_phone_error">Введіть дійсний номер телефону</string>
+
+    <string name="auth_email_title">Додайте свою електронну пошту</string>
+    <string name="auth_email_sub">Необхідний для входу та відновлення облікового запису</string>
+    <string name="auth_email_hint">you@example.com</string>
+    <string name="auth_email_error">Будь ласка, введіть дійсну адресу електронної пошти</string>
+
+    <string name="auth_code_title">Введіть код</string>
+    <string name="auth_code_sub_phone">Код надіслано на %1$s</string>
+    <string name="auth_code_sub_email">і дублюється до %1$s</string>
+    <string name="auth_code_hint">– – – – – –</string>
+    <string name="auth_code_resend">Повторно надіслати код</string>
+    <string name="auth_code_error">Неправильний код, спробуйте ще раз</string>
+    <string name="auth_code_verify">Підтвердити</string>
+    <string name="auth_dev_hint">Код (тестовий режим, поки немає сервера): %1$s</string>
+
+    <string name="chats_title">Чати</string>
+    <string name="chats_empty_title">Виберіть чат</string>
+    <string name="chats_empty_sub">Або почніть нову розмову за допомогою значка створення повідомлення</string>
+    <string name="search_hint">Пошук</string>
+    <string name="new_chat">Новий чат</string>
+    <string name="settings">Налаштування</string>
+    <string name="profile">Профіль</string>
+
+    <string name="message_hint">повідомлення...</string>
+    <string name="send">Надіслати</string>
+
+    <string name="profile_name">Name</string>
+    <string name="profile_handle">Username</string>
+    <string name="profile_bio">біографія</string>
+    <string name="profile_phone">Телефон</string>
+    <string name="profile_email">Електронна пошта</string>
+    <string name="save">зберегти</string>
+    <string name="edit">Редагувати</string>
+    <string name="logout">Вийти</string>
+
+    <string name="settings_theme">Темна тема</string>
+    <string name="settings_language">Мова програми</string>
+    <string name="settings_proxy">Проксі та обхід цензури</string>
+    <string name="settings_proxy_sub">Налаштуйте SOCKS5 або свій власний обфускований проксі Talksy</string>
+    <string name="settings_server">Сервер (сервер)</string>
+    <string name="settings_server_sub">Адреса сервера, який фактично надсилає код електронної пошти</string>
+    <string name="settings_server_hint">10.0.2.2:5000</string>
+    <string name="settings_server_not_set">Не встановлено</string>
+    <string name="settings_notifications">Сповіщення</string>
+    <string name="settings_about">про</string>
+
+    <string name="proxy_title">Proxy connection</string>
+    <string name="proxy_mode">Режим</string>
+    <string name="proxy_mode_off">Вимкнено</string>
+    <string name="proxy_mode_socks5">ШКАПЕТКИ5</string>
+    <string name="proxy_mode_custom">Спеціальний проксі-сервер Talksy (обфускований)</string>
+    <string name="proxy_host">Адреса сервера</string>
+    <string name="proxy_port">Порт</string>
+    <string name="proxy_user">Username (optional)</string>
+    <string name="proxy_pass">Password (optional)</string>
+    <string name="proxy_secret">Секретний ключ</string>
+    <string name="proxy_test">Тестове підключення</string>
+    <string name="proxy_save">Зберегти та застосувати</string>
+    <string name="proxy_ok">Проксі підключено</string>
+    <string name="proxy_fail">Помилка підключення</string>
+    <string name="proxy_help">Дивіться proxy-server/README.md в архіві проекту, щоб отримати інструкції щодо самостійного розміщення.</string>
+
+    <string name="new_chat_hint">Введіть ім’я або @username</string>
+    <string name="new_chat_empty">Почніть вводити текст, щоб знайти користувача</string>
+    <string name="new_chat_none">Користувачів не знайдено</string>
+
+    <string name="backend_not_connected">Сервер ще не підключений — працює в локальному режимі</string>
+
+    <string name="error_generic">Помилка</string>
+    <string name="error_server_connection">Помилка підключення до сервера:</string>
+    <string name="error_server_not_configured">Адреса сервера не встановлена</string>
+
+    <string name="group_setting_change_failed">Не вдалося змінити налаштування</string>
+    <string name="group_role_change_failed">Не вдалося змінити роль</string>
+    <string name="group_set_username">Встановіть @username</string>
+    <string name="group_name_title">Назва групи</string>
+    <string name="group_rename_failed">Не вдалося перейменувати</string>
+    <string name="group_username_hint">@group_username</string>
+    <string name="group_username_title">Group username</string>
+    <string name="group_username_save_failed">Failed to save username</string>
+    <string name="uploading_photo">Завантаження фото…</string>
+    <string name="photo_upload_failed">Не вдалося завантажити фото</string>
+    <string name="photo_process_error">Помилка обробки фото:</string>
+
+    <string name="msg_send_failed">Не вдалося надіслати</string>
+    <string name="encryption_error">Помилка шифрування:</string>
+    <string name="decrypt_failed_short">Не вдалося розшифрувати</string>
+    <string name="preparing_file">Підготовка файлу…</string>
+    <string name="file_upload_failed">Не вдалося завантажити файл</string>
+    <string name="file_read_error">Помилка читання файлу:</string>
+    <string name="group_key_decrypt_failed">Не вдалося розшифрувати ключ групи</string>
+    <string name="group_admin_only_send">Тільки адміністратори можуть публікувати повідомлення в цій групі</string>
+    <string name="peer_no_key_yet">Ця особа ще не має ключа шифрування — попросіть її відкрити програму та повторити спробу</string>
+
+    <string name="fab_new_chat">Новий чат</string>
+    <string name="fab_new_group">Нова група</string>
+    <string name="pubkey_upload_failed">Не вдалося завантажити відкритий ключ на сервер:</string>
+    <string name="pubkey_not_uploaded">Ключ не завантажено на сервер</string>
+    <string name="keygen_failed">Не вдалося створити ключ шифрування</string>
+    <string name="keygen_create_failed">Не вдалося створити ключ шифрування</string>
+    <string name="ok">добре</string>
+    <string name="chat_unpin">Відкріпити</string>
+    <string name="chat_pin">Pin</string>
+    <string name="chat_archive">Архів</string>
+    <string name="notif_enable">Увімкнути сповіщення</string>
+    <string name="notif_disable">Вимкнути сповіщення</string>
+
+    <string name="contacts_in_app_header">КОНТАКТИ НА TALKSY</string>
+    <string name="searching_contacts">Пошук контактів…</string>
+    <string name="no_phone_contacts">У ваших контактах не знайдено номерів телефонів</string>
+    <string name="no_registered_contacts">Жоден із ваших контактів ще не на Talksy</string>
+    <string name="grant_contacts_permission">Надайте контактам доступ, щоб побачити, хто вже є на Talksy, або знайдіть когось вище</string>
+    <string name="search_results_header">РЕЗУЛЬТАТИ ПОШУКУ</string>
+    <string name="server_not_configured_settings">Сервер не налаштовано (Параметри → Сервер)</string>
+
+    <string name="last_seen_recently">востаннє бачили нещодавно</string>
+    <string name="last_seen_online">онлайн</string>
+    <string name="last_seen_at_time">востаннє в мережі %s</string>
+    <string name="last_seen_yesterday_at">востаннє бачили вчора в %s</string>
+    <string name="last_seen_date_format">d МММ \'в\' ГГ:хв</string>
+    <string name="last_seen_date_at">востаннє в мережі %s</string>
+
+    <string name="profile_save_failed">Не вдалося зберегти</string>
+    <string name="image_read_failed">Не вдалося прочитати зображення</string>
+    <string name="photo_updated">Фото оновлено</string>
+
+    <string name="server_not_set_hint">Сервер не встановлено — торкніться, щоб налаштувати</string>
+    <string name="server_label_prefix">сервер:</string>
+    <string name="server_address_title">Адреса сервера</string>
+    <string name="server_address_message">Введіть адресу внутрішнього сервера. Для емулятора: 10.0.2.2:5000. Для реального телефону на тому ж Wi-Fi: COMPUTER_IP:5000</string>
+    <string name="digits_suffix">цифри)</string>
+
+    <string name="downloading_file">Завантаження "</string>
+    <string name="file_download_failed">Не вдалося завантажити файл</string>
+    <string name="no_app_to_open_file">Не знайдено програми для відкриття цього файлу</string>
+
+    <string name="my_groups_header">МОЇ ГРУПИ</string>
+    <string name="found_header">ЗНАЙДЕНО</string>
+    <string name="joined_group_prefix">Ви приєдналися до групи "</string>
+    <string name="join_group_failed">Не вдалося приєднатися до групи</string>
+
+    <string name="revoke_admin">Відкликати права адміністратора</string>
+    <string name="make_admin">Зробити адміном</string>
+    <string name="role_owner">ВЛАСНИК</string>
+    <string name="role_admin">АДМІНІСТРАТОР</string>
+    <string name="no_messages_yet">Поки що немає повідомлень</string>
+
+    <string name="notif_channel_name">Розмовні повідомлення</string>
+    <string name="notif_channel_desc">Сповіщення про нові повідомлення в чатах Talksy</string>
+    <string name="checking_new_messages">Перевірка нових повідомлень</string>
+
+    <string name="file_open_failed">Не вдалося відкрити файл</string>
+    <string name="file_too_big_prefix">Файл більший ніж</string>
+    <string name="file_too_big_suffix">MB — ще не підтримується</string>
+
+    <string name="enter_group_name">Введіть назву групи</string>
+    <string name="group_create_failed">Не вдалося створити групу</string>
+    <string name="encryption_setup_error">Помилка налаштування шифрування:</string>
+
+    <string name="profile_load_failed">Не вдалося завантажити профіль</string>
+    <string name="unblock">Розблокувати</string>
+    <string name="block">Блокувати</string>
+
+    <string name="server_not_configured_full">Сервер не налаштований. Перейдіть до Налаштування → Сервер і введіть адресу серверної частини (див. backend/README.md).</string>
+    <string name="sending_code">Надсилання коду…</string>
+    <string name="code_send_failed">Не вдалося надіслати код</string>
+
+    <string name="size_bytes">Б</string>
+    <string name="size_kb">%.0f КБ</string>
+    <string name="size_mb">%.1f МБ</string>
+
+    <string name="proxy_handshake_rejected">Talksy-proxy: сервер відхилив рукостискання (код</string>
+    <string name="proxy_encryption_error">Помилка шифрування Talksy-proxy:</string>
+
+    <string name="code_resend_failed">Не вдалося повторно надіслати код</string>
+    <string name="checking">Перевірка…</string>
+
+    <string name="unarchive">Розархівувати</string>
+
+    <string name="group_prefix">Група:</string>
+
+    <string name="location_unknown">Місцезнаходження невідоме</string>
+
+    <string name="group_make_channel_title">Канал (відображається в пошуку)</string>
+    <string name="group_make_channel_desc">Коли ввімкнено, групу можна знайти за назвою під час пошуку — інакше до неї можна приєднатися лише за запрошенням</string>
+    <string name="group_private_title">Приватна група</string>
+    <string name="group_private_desc">Коли ввімкнено, ніхто не може приєднатися до групи, навіть якщо вони якось знайдуть її — лише за запрошенням від члена</string>
+
+    <string name="settings_e2e">Наскрізне шифрування (E2E)</string>
+    <string name="settings_e2e_desc">За замовчуванням повідомлення шифруються за допомогою ключа, який зберігається сервером — надійно, але технічно сервер може їх прочитати. Увімкніть це, щоб лише інша особа могла розшифрувати ваші повідомлення; Надсилання іноді може чекати, поки вони не отримають ключ шифрування</string>
+
+    <string name="email_spam_hint">Якщо електронний лист не надійшов протягом кількох хвилин, перевірте папку зі спамом</string>
+    <string name="code_sent_wait">Надіслано (%ds)</string>
+
+    <string name="delete_for_me">Видалити для мене</string>
+    <string name="delete_for_everyone">Видалити для всіх</string>
+    <string name="delete_for_everyone_confirm">Це призведе до видалення повідомлення для всіх у чаті без можливості скасувати це. Усе одно видалити?</string>
+    <string name="message_deleted">Повідомлення видалено</string>
+
+    <string name="settings_section_appearance">ЗОВНІШНИЙ ВИГЛЯД</string>
+    <string name="settings_section_security">БЕЗПЕКА</string>
+    <string name="settings_section_account">ОБЛІКОВИЙ ЗАПИС І МЕРЕЖА</string>
+
+    <string name="call_incoming">Вхідний дзвінок…</string>
+    <string name="call_calling">Телефоную…</string>
+    <string name="call_connecting">Підключення…</string>
+    <string name="call_connected">Підключено</string>
+    <string name="call_connection_lost">Connection lost</string>
+    <string name="call_permission_denied">Потрібен доступ до мікрофона (і камери для відеодзвінків)</string>
+    <string name="call_failed">Не вдалося почати виклик</string>
+    <string name="call_ended_by_peer">Інша особа завершила розмову</string>
+    <string name="notif_accept">прийняти</string>
+    <string name="notif_decline">відхилити</string>
+    <string name="call_channel_name">Дзвінки</string>
+    <string name="typing_now">друкую...</string>
+    <string name="menu_copy_text">Скопіюйте текст</string>
+    <string name="menu_save_downloads">Зберегти до завантажень</string>
+    <string name="menu_forward">вперед</string>
+    <string name="menu_delete">Видалити</string>
+    <string name="text_copied">Текст скопійовано</string>
+    <string name="forward_to">Переслати до…</string>
+    <string name="forwarded_ok">Переслано</string>
+    <string name="msg_status_sent">Надіслано</string>
+    <string name="msg_status_read">Прочитайте</string>
+    <string name="msg_reply">Відповісти</string>
+    <string name="msg_edit">Редагувати</string>
+    <string name="msg_pin">Pin</string>
+    <string name="msg_unpin">Відкріпити</string>
+    <string name="reply_title">Відповісти</string>
+    <string name="edit_title">Редагування повідомлення</string>
+    <string name="pinned_title">Закріплене повідомлення</string>
+    <string name="edited_mark">відредаговано</string>
+    <string name="reply_original_missing">повідомлення</string>
+    <string name="logo_text">Talksy</string>
+    <string name="upload_progress">%1$s з %2$s МБ · %3$d%%</string>
+    <string name="upload_too_big">Файл завеликий (макс. %1$d МБ)</string>
+    <string name="upload_cancel_confirm">Скасувати надсилання цього файлу?</string>
+    <string name="upload_cancel_yes">Скасувати завантаження</string>
+    <string name="story_you">Ви</string>
+    <string name="story_photo">Фото</string>
+    <string name="story_video">відео</string>
+    <string name="story_limit">Ви можете опублікувати до 3 історій</string>
+    <string name="story_published">Оповідання опубліковано</string>
+    <string name="story_reply_hint">відповісти…</string>
+    <string name="story_reply_sent">Відповідь надіслано</string>
+    <string name="story_reply_label">Відповідь на історію</string>
+    <string name="story_delete_confirm">Видалити цю історію?</string>
+    <string name="story_delete_btn">Видалити</string>
+    <string name="story_deleted">Історія видалена</string>
+    <string name="story_load_failed">Не вдалося завантажити історію</string>
+    <string name="story_just_now">тільки зараз</string>
+    <string name="story_min_ago">%1$d хв тому</string>
+    <string name="story_hours_ago">%1$d год тому</string>
+    <string name="story_views_title">Перегляди: %1$d</string>
+    <string name="story_no_views">Ще немає переглядів</string>
+    <string name="who_write_title">Хто може написати мені</string>
+    <string name="who_write_all">Всі</string>
+    <string name="who_write_contacts">Лише люди, яким я писав</string>
+    <string name="who_write_nobody">ніхто</string>
+    <string name="who_write_saved">Збережено</string>
+    <string name="who_write_hint">Стосується повідомлень і дзвінків. Люди, яким заборонено доступ, побачать сповіщення.</string>
+    <string name="channel_subscribe">Підпишіться</string>
+    <string name="channel_unsubscribe">Відписатися</string>
+    <string name="channel_subscribed">Ви підписалися</string>
+    <string name="channel_unsubscribed">Ви скасували підписку</string>
+    <string name="channel_unsubscribe_confirm">Скасувати підписку на цей канал?</string>
+    <string name="members_title_count">УЧАСНИКИ · %1$d</string>
+    <string name="members_visible_title">Показати учасників усім</string>
+    <string name="members_visible_desc">Якщо вимкнено, лише власник і адміністратори можуть бачити учасників каналу</string>
+    <string name="members_hidden_note">Список учасників прихований власником каналу</string>
+    <string name="notif_reply">Відповісти</string>
+    <string name="notif_reply_hint">повідомлення...</string>
+    <string name="notif_reply_sent">Надіслано: %1$s</string>
+    <string name="notif_reply_failed">Не вдалося надіслати</string>
+    <string name="notif_hangup">Поклади трубку</string>
+    <string name="call_in_progress">Виконується дзвінок</string>
+    <string name="call_video_in_progress">Виконується відеодзвінок</string>
+    <string name="call_ongoing_channel_name">Поточний дзвінок</string>
+    <string name="call_go_to_chats">Заходьте в чати</string>
+
+    <string name="cancel">Скасувати</string>
+    <string name="saved">Збережено</string>
+    <string name="copy">Копіювати</string>
+    <string name="copied">Скопійовано</string>
+
+    <string name="botfather_greeting">привіт Я допоможу вам створити та налаштувати бота для цього месенджера.</string>
+    <string name="botfather_menu_prompt">Що б ти хотіла зробити?</string>
+    <string name="botfather_btn_create">Створіть бота</string>
+    <string name="botfather_btn_my_bots">Мої боти</string>
+    <string name="botfather_ask_name">Як має називатися бот? Це ім’я, яке люди бачитимуть, надсилаючи повідомлення.</string>
+    <string name="botfather_name_too_long">Це ім’я задовге (максимум 64 символи). Спробуйте щось коротше.</string>
+    <string name="botfather_ask_username">Тепер виберіть ім’я користувача для бота: 5-32 символи, латинські літери/цифри/підкреслення та має закінчуватися на \"bot\" (наприклад, my_cool_bot).</string>
+    <string name="botfather_ask_username_again">Try another username.</string>
+    <string name="botfather_done">Готово! Створено бота \"%1$s\" (%2$s). Ось його маркер — він потрібен коду вашого бота, щоб спілкуватися із сервером як бот. Тримайте його в секреті, як пароль.</string>
+    <string name="botfather_copy_token">Копіювати маркер</string>
+    <string name="botfather_open_settings">Налаштування бота</string>
+    <string name="botfather_what_next">Що далі?</string>
+
+    <string name="my_bots_title">Мої боти</string>
+    <string name="my_bots_empty">Ботів ще немає. Торкніться \"+\", щоб створити свій перший через BotFather.</string>
+
+    <string name="bot_token_label">БОТ ТОКЕН</string>
+    <string name="bot_show_token">Показати</string>
+    <string name="bot_hide_token">Сховати</string>
+    <string name="bot_regenerate_token">Регенерувати маркер</string>
+    <string name="bot_regenerate_token_hint">Старий маркер одразу перестане працювати — вам потрібно буде оновити код свого бота новим.</string>
+    <string name="bot_regenerate_token_confirm">Старий токен негайно перестане працювати. Код бота, який ви запускаєте, потрібно буде оновити новим маркером. Продовжити?</string>
+    <string name="bot_token_updated">Токен відновлено</string>
+
+    <string name="bot_name_label">NAME</string>
+    <string name="bot_bio_label">ОПИС</string>
+    <string name="bot_name_required">Введіть назву для бота</string>
+
+    <string name="bot_webhook_label">WEBHOOK (optional)</string>
+    <string name="bot_webhook_hint">За замовчуванням бот сам опитує сервер (getUpdates) — налаштовувати нічого, працює навіть без публічного IP. Вебхук потрібен, лише якщо код вашого бота розміщено на публічній адресі https і ви хочете, щоб сервер надсилав повідомлення на нього напряму.</string>
+    <string name="bot_webhook_clear">Видалити вебхук</string>
+
+    <string name="bot_docs_label">ЯК ПІДКЛЮЧИТИ СВОГО БОТА</string>
+    <string name="bot_docs_intro">Код бота написаний на Python і виконується НА ВАШОМУ ВЛАСНОМУ МАШИНІ, а не в месенджері. Ось мінімальний робочий приклад використання getUpdates:</string>
+    <string name="bot_docs_code_sample"><![CDATA[import requests, time
+
+TOKEN = "%1$s"
+BASE = "SERVER/bot" + TOKEN
+
+offset = 0
+while True:
+    r = requests.get(f"{BASE}/getUpdates", params={"offset": offset, "timeout": 25}).json()
+    for upd in r["result"]:
+        offset = upd["update_id"] + 1
+        msg = upd["message"]
+        chat_id = msg["chat"]["id"]
+        text = msg["text"]
+        requests.post(f"{BASE}/sendMessage",
+            json={"chat_id": chat_id, "text": f"You said: {text}"})]]></string>
+
+    <string name="bot_delete">Видалити бота</string>
+    <string name="bot_delete_confirm">Бот і його маркер буде видалено назавжди. Історія чату з ним залишиться. Продовжити?</string>
+    <string name="bot_deleted">Бот видалено</string>
+    <string name="bot_chat_subtitle">бот</string>
+    <string name="mention_not_found">Нічого не знайдено</string>
+    <string name="blocked_by_peer">Цей користувач не дозволяє вам надсилати йому повідомлення</string>
+    <string name="bot_add_to_group">Додати бота в групу</string>
+    <string name="bot_added_to_group">Бот доданий до групи</string>
+    <string name="add_participant">Додати учасника</string>
+    <string name="member_added">Учасник доданий</string>
+    <string name="pick_group_for_bot">Виберіть групу</string>
+    <string name="bot_mode_webhook">Вебхук</string>
+    <string name="bot_mode_mini_app">Міні-додаток</string>
+    <string name="bot_response_mode">Як відповідає бот</string>
+    <string name="mini_app_url_hint">your-miniapp.example</string>
+    <string name="mini_app_name_hint">Назва міні-додатка</string>
+    <string name="open_bot_mini_app">Відкрийте програму Mini</string>
+    <string name="privacy_section_title">Конфіденційність</string>
+    <string name="privacy_who_can_write">Хто може написати мені</string>
+    <string name="liquid_glass_toggle">Рідке скло</string>
+    <string name="liquid_glass_toggle_sub">Скляний інтерфейс у стилі iOS/Telegram</string>
+    <string name="switch_account_title">Облікові записи</string>
+    <string name="add_account">Додати обліковий запис</string>
+    <string name="max_accounts_hint">Ви можете мати до %d облікових записів одночасно</string>
+    <string name="account_switched">Обліковий запис змінено</string>
+    <string name="settings_accounts">Облікові записи</string>
+    <string name="settings_accounts_sub">До 3 акаунтів, швидке перемикання</string>
+    <string name="spoiler_menu_item">Сховати як спойлер</string>
+    <string name="spoiler_hint">Торкніться, щоб відкрити</string>
+    <string name="video_speed">швидкість</string>
+    <string name="video_quality">якість</string>
+    <string name="video_quality_auto">Авто</string>
+    <string name="video_quality_high">Високий</string>
+    <string name="video_quality_medium">Середній (економія даних)</string>
+    <string name="send_blurred">Надіслати розмито</string>
+    <string name="media_picker_title">Фото та відео</string>
+    <string name="media_picker_recents">Останні</string>
+    <string name="media_picker_permission">Дозволити доступ до галереї</string>
+    <string name="media_picker_empty">Нічого не знайдено</string>
+    <string name="video_loading_percent">%d%%</string>
+
+    <string name="logout_confirm">Вийти з цього пристрою?</string>
+
+    <string name="settings_section_chat">ЧАТИ ТА ЗМІ</string>
+    <string name="settings_wallpaper">Шпалери для чату</string>
+    <string name="settings_wallpaper_sub">Колір фону для чатів або власного фото</string>
+    <string name="settings_font_size">Розмір шрифту</string>
+    <string name="settings_auto_download">Автоматичне завантаження медіа</string>
+    <string name="settings_auto_download_sub">Коли завантажувати фото і відео в чатах</string>
+
+    <string name="settings_section_data">ДАНІ</string>
+    <string name="settings_storage">Зберігання</string>
+    <string name="settings_storage_sub">Розмір кешу, очищення завантажених файлів</string>
+    <string name="settings_blocked">Заблоковані користувачі</string>
+    <string name="settings_blocked_sub">Люди, яких ви заблокували</string>
+
+    <string name="wallpaper_default">За замовчуванням</string>
+    <string name="wallpaper_custom">Ваше фото</string>
+    <string name="wallpaper_indigo">Індиго</string>
+    <string name="wallpaper_sunset">Захід сонця</string>
+    <string name="wallpaper_ocean">океан</string>
+    <string name="wallpaper_forest">Ліс</string>
+    <string name="wallpaper_rose">Роза</string>
+    <string name="wallpaper_midnight">опівночі</string>
+    <string name="wallpaper_saved">Шпалери збережено</string>
+
+    <string name="font_size_small">Маленький</string>
+    <string name="font_size_medium">За замовчуванням</string>
+    <string name="font_size_large">Великий</string>
+
+    <string name="auto_download_wifi">Тільки Wi-Fi</string>
+    <string name="auto_download_always">Завжди</string>
+    <string name="auto_download_never">Ніколи</string>
+
+    <string name="storage_cache_desc">Використовується для завантажених фотографій, відео та файлів</string>
+    <string name="storage_clear_cache">Очистити кеш</string>
+    <string name="storage_clear_cache_hint">Файли буде видалено з цього пристрою, але залишаться доступними в чатах — за потреби їх буде повторно завантажено.</string>
+    <string name="storage_cache_cleared">Кеш очищено</string>
+
+    <string name="blocked_empty">Немає заблокованих користувачів</string>
+    <string name="blocked_unblock_confirm">Розблокувати цього користувача? Вони зможуть надіслати вам повідомлення та знову побачити ваш профіль.</string>
+
+    <string name="profile_stories">ІСТОРІЇ</string>
+    <string name="profile_stories_view">Переглянути</string>
+    <string name="profile_media">ЗМІ</string>
+    <string name="profile_gifts">Подарунки</string>
+    <string name="profile_gifts_sub">Надсилайте один одному подарунки в чаті</string>
+    <string name="profile_gifts_toast">Незабаром подарунки на Talksy</string>
+    <string name="profile_soon">СКОРО</string>
+
+    <string name="miniapp_invalid">Цей бот не має міні-програми</string>
+    <string name="miniapp_default_title">Міні-додаток</string>
+    <string name="miniapp_load_error">Не вдалося завантажити міні-програму (%1$s). Перевірте підключення та повторіть спробу.</string>
+    <string name="miniapp_open">ВІДЧИНЕНО</string>
+    <string name="bot_start">Почніть</string>
+    <plurals name="bot_users_count">
+        <item quantity="one">Користувач %d</item>
+        <item quantity="other">користувачів %d</item>
+    </plurals>
+    <string name="attach_gallery">Галерея</string>
+    <string name="attach_file">Файл</string>
+    <string name="attach_send_plain">Надіслати</string>
+
+    <string name="connecting">Підключення</string>
+    <string name="connecting_lower">підключення</string>
+    <string name="no_connection">No connection</string>
+    <string name="needs_internet">Потрібне підключення до Інтернету</string>
+    <string name="reaction_wait_sent">Ви можете відреагувати, коли повідомлення буде надіслано</string>
+    <string name="group_subtitle">група</string>
+    <string name="channel_subtitle">канал</string>
+
+    <string name="record_voice">Голосове повідомлення</string>
+    <string name="record_round">Відеоповідомлення</string>
+    <string name="mode_voice_hint">Утримуйте, щоб записати голосове повідомлення</string>
+    <string name="mode_round_hint">Утримуйте, щоб записати відеоповідомлення</string>
+    <string name="record_slide_cancel">‹ Проведіть пальцем ліворуч, щоб скасувати</string>
+    <string name="record_release_cancel">Відпустіть, щоб скасувати</string>
+    <string name="record_up_to_lock">Проведіть пальцем угору, щоб продовжити запис</string>
+    <string name="record_too_short">Запис надто короткий</string>
+    <string name="record_failed">Не вдалося почати запис</string>
+    <string name="record_hold_again">Тепер знову утримуйте кнопку</string>
+    <string name="cancel_caps">СКАСУВАТИ</string>
+    <string name="voice_load_failed">Не вдалося завантажити голосове повідомлення</string>
+    <string name="msg_type_voice">Голосове повідомлення</string>
+    <string name="msg_type_round">Відеоповідомлення</string>
+    <string name="close">Закрити</string>
+    <string name="more">більше</string>
+    <string name="miniapp_minimize">Згорнути</string>
+    <string name="link_open_in_browser">Відкрити в браузері</string>
+    <string name="link_copy">Копіювати посилання</string>
+    <string name="link_copied">Посилання скопійовано</string>
+    <string name="link_share">Поділіться</string>
+    <string name="link_reload">Перезавантажити</string>
+    <string name="link_load_error">Не вдалося завантажити сторінку (%1$s)</string>
+    <string name="link_blocked">Це посилання неможливо відкрити</string>
+    <string name="miniapp_return">Повернутися до міні-програми</string>
+    <string name="miniapp_system_badge">Системний додаток</string>
+    <string name="settings_links_in_app">Відкривайте посилання в додатку</string>
+    <string name="settings_links_in_app_sub">Вимкнено — посилання відкриваються в основному браузері. Системні міні-програми завжди відкриваються в Talksy.</string>
+    <string name="nav_chats">Чати</string>
+    <string name="nav_contacts">Контакти</string>
+    <string name="nav_settings">Налаштування</string>
+    <string name="nav_profile">Профіль</string>
+    <string name="settings_privacy">Конфіденційність</string>
+    <string name="settings_privacy_sub">Хто може бачити ваші дані та писати вам</string>
+    <string name="priv_phone">Номер телефону</string>
+    <string name="priv_username">Username</string>
+    <string name="priv_last_seen">Останній раз</string>
+    <string name="priv_photo">Фотографії профілю</string>
+    <string name="priv_bio">про</string>
+    <string name="priv_messages">Повідомлення</string>
+    <string name="priv_group_invites">Групи та канали</string>
+    <string name="priv_calls">Дзвінки</string>
+    <string name="priv_voice">Голосові та відеоповідомлення</string>
+    <string name="priv_everybody">Всі</string>
+    <string name="priv_contacts">Мої контакти</string>
+    <string name="priv_nobody">ніхто</string>
+    <string name="priv_group_invites_note">Якщо ви забороните додавати вас до груп, люди натомість надсилатимуть вам запрошення — ви вирішуєте, чи приєднуватися.</string>
+    <string name="priv_invites">Групові запрошення</string>
+    <string name="priv_invites_sub">Запрошення від людей, які не можуть додати вас безпосередньо</string>
+    <string name="invites_empty">Без запрошень</string>
+    <string name="invites_banner">Групові запрошення: %1$d</string>
+    <string name="invite_accept">прийняти</string>
+    <string name="invite_decline">відхилити</string>
+    <string name="invite_accepted">Ви приєдналися до групи</string>
+    <string name="invite_group_from">Запрошено %1$s · членами %2$d</string>
+    <string name="invite_channel_from">Запрошено %1$s · підписалися на %2$d</string>
+    <string name="pub_tab">Пости</string>
+    <string name="pub_archive_tab">Архів публікацій</string>
+    <string name="pub_empty">Дописів ще немає</string>
+    <string name="pub_empty_sub">Фотографії та відео, якими ви ділитеся, відображатимуться тут.</string>
+    <string name="pub_archive_empty">Архів порожній</string>
+    <string name="pub_archive_empty_sub">Прострочені історії бачите лише ви, якщо ви не опублікуєте їх у своєму профілі.</string>
+    <string name="pub_add">додати</string>
+    <string name="pub_delete_title">Видалити з архіву?</string>
+    <string name="pub_delete_msg">Пост буде видалено назавжди.</string>
+    <string name="storage_title">Використання сховища</string>
+    <string name="storage_sub">Talksy займає стільки місця на вашому пристрої</string>
+    <string name="storage_clear_all">Очистити кеш %1$s</string>
+    <string name="storage_clear">ясно</string>
+    <string name="storage_clear_cat">Буде видалено: %1$s</string>
+    <string name="storage_clear_title">Очистити кеш?</string>
+    <string name="storage_clear_msg">Файли залишаються на сервері — за потреби їх можна завантажити знову.</string>
+    <string name="storage_cloud_note">Усі медіафайли залишаються в хмарі Talksy, ви можете будь-коли завантажити їх знову.</string>
+    <string name="storage_auto_title">Автоматичне видалення кешованих медіа</string>
+    <string name="storage_ttl">Зберігати кеш для</string>
+    <string name="storage_max">Максимальний розмір кешу</string>
+    <string name="storage_unlimited">Необмежений</string>
+    <string name="storage_auto_note">Файли, які ви не відкривали протягом цього періоду, або найстаріші, коли ліміт перевищено, будуть видалені з пристрою.</string>
+    <string name="ttl_1d">1 день</string>
+    <string name="ttl_1w">1 тиждень</string>
+    <string name="ttl_1m">1 місяць</string>
+    <string name="ttl_3m">3 місяці</string>
+    <string name="ttl_never">Ніколи</string>
+    <string name="cat_video">відео</string>
+    <string name="cat_files">Файли</string>
+    <string name="cat_photo">Фотографії</string>
+    <string name="cat_voice">Голосові повідомлення</string>
+    <string name="cat_stickers">Стікери та емодзі</string>
+    <string name="cat_other">інше</string>
+    <string name="cat_messages">Повідомлення</string>
+    <string name="data_title">Використання даних</string>
+    <string name="data_title_sub">Скільки відправлено та отримано</string>
+    <string name="net_all">всі</string>
+    <string name="net_mobile">мобільний</string>
+    <string name="net_wifi">Wi-Fi</string>
+    <string name="net_roaming">Роумінг</string>
+    <string name="data_since">Статистика з %1$s</string>
+    <string name="data_tap_hint">Торкніться рядка, щоб переглянути деталі.</string>
+    <string name="data_total">Загальний трафік</string>
+    <string name="data_sent">Надіслано</string>
+    <string name="data_received">Отримано</string>
+    <string name="data_note">Підраховує власний трафік програми: повідомлення, фотографії, відео, файли та голосові повідомлення.</string>
+    <string name="data_auto_hint">Змінити, щоб заощадити мобільні дані</string>
+    <string name="data_reset">Скинути статистику</string>
+    <string name="data_reset_msg">Лічильники трафіку будуть скинуті.</string>
+    <string name="data_sent_received">Надіслано: %1$s · отримано: %2$s</string>
+    <string name="delete">Видалити</string>
+    <string name="devices_title">Пристрої</string>
+    <string name="devices_this">Цей пристрій</string>
+    <string name="devices_active">Активні сесії</string>
+    <string name="devices_end_others">Завершити всі інші сеанси</string>
+    <string name="devices_end_others_note">Вийдіть із системи на всіх пристроях, крім цього.</string>
+    <string name="devices_end_others_confirm">Усі інші пристрої буде виведено з системи. Ви можете знову ввійти за допомогою електронного коду.</string>
+    <string name="devices_end_session">Завершити сеанс</string>
+    <string name="devices_active_note">Ви можете увійти в Talksy на інших пристроях — усі активні сеанси перераховані тут. Торкніться сеансу, щоб змінити його налаштування.</string>
+    <string name="devices_none">Немає інших активних сеансів.</string>
+    <string name="devices_auto_title">Автоматично завершувати сесії</string>
+    <string name="devices_auto_if">Якщо неактивний для</string>
+    <string name="devices_auto_note">Якщо ви не використовували пристрій довше цього часу, його сеанс буде автоматично завершено.</string>
+    <string name="devices_1w">1 тиждень</string>
+    <string name="devices_1m">1 місяць</string>
+    <string name="devices_3m">3 місяці</string>
+    <string name="devices_6m">6 міс.</string>
+    <string name="devices_1y">1 рік</string>
+    <string name="devices_online">онлайн</string>
+    <string name="devices_today_at">сьогодні в %1$s</string>
+    <string name="devices_yesterday_at">вчора в %1$s</string>
+    <string name="devices_app">застосування</string>
+    <string name="devices_geo">Розташування на основі IP-адреси</string>
+    <string name="devices_accept_secret">Приймайте секретні чати</string>
+    <string name="devices_accept_secret_sub">Використовуйте цей пристрій для секретних (E2E) чатів</string>
+    <string name="devices_accept_calls">Приймати дзвінки</string>
+    <string name="devices_accept_calls_sub">Використовуйте цей пристрій для дзвінків</string>
+    <string name="priv_archive">Архів публікацій</string>
+    <string name="pub_archive_hidden">Цей користувач приховав свій архів публікацій</string>
+    <string name="pub_empty_other">Фотографії та відео, якими ділиться ця особа, відображатимуться тут.</string>
+    <string name="pub_archive_empty_other">Ця особа не має старіших публікацій.</string>
+
+    <string name="account_ttl_12">Після 12 місяців неактивності</string>
+    <string name="account_ttl_24">Після 24 місяців неактивності</string>
+    <string name="account_ttl_6">Після 6 місяців неактивності</string>
+    <string name="account_ttl_title">Автоматичне видалення облікового запису</string>
+    <string name="applock_change_pin">Змінити PIN-код</string>
+    <string name="applock_disable">Вимкнути блокування</string>
+    <string name="applock_disable_biometric">Вимкнути біометрію</string>
+    <string name="applock_disabled">Блокування вимкнено</string>
+    <string name="applock_enable_biometric">Увімкнути біометрію</string>
+    <string name="applock_off">Вимкнено</string>
+    <string name="applock_pin_bio">PIN-код і біометрія</string>
+    <string name="applock_pin_only">Лише PIN-код</string>
+    <string name="applock_set_pin">Встановити PIN-код</string>
+    <string name="applock_title">PIN-код і біометрія</string>
+    <string name="attach_contact">Контакт</string>
+    <string name="attach_empty">Тут ще немає фото чи відео</string>
+    <string name="attach_location">Геопозиція</string>
+    <string name="attach_music">Музика</string>
+    <string name="attach_permission_btn">Дозволити доступ</string>
+    <string name="attach_permission_hint">Щоб показати ваші фото та відео, потрібен доступ до галереї</string>
+    <string name="attach_poll">Опитування</string>
+    <string name="attach_soon">Незабаром</string>
+    <string name="attach_wallet">Гаманець</string>
+    <string name="chat_delete">Видалити чат</string>
+    <string name="chat_delete_for_everyone">Видалити для всіх</string>
+    <string name="chat_delete_for_me">Видалити для себе</string>
+    <string name="chat_you_label">Ви</string>
+    <string name="draft_label">Чернетка:</string>
+    <string name="favorite_added">Додано до вибраного</string>
+    <string name="favorite_removed">Видалено з вибраного</string>
+    <string name="favorites_empty">Тут поки що нічого немає.\nВиберіть повідомлення та натисніть «До вибраного»</string>
+    <string name="favorites_remove">Прибрати</string>
+    <string name="favorites_remove_confirm">Прибрати повідомлення з вибраного?</string>
+    <string name="favorites_sub">Збережені повідомлення</string>
+    <string name="favorites_title">Вибране</string>
+    <string name="language_title">Мова</string>
+    <string name="lock_biometric_title">Розблокування Talksy</string>
+    <string name="lock_create_pin">Придумайте PIN-код</string>
+    <string name="lock_enter_pin">Введіть PIN-код</string>
+    <string name="lock_mismatch">PIN-коди не збігаються, спробуйте ще раз</string>
+    <string name="lock_repeat_pin">Повторіть PIN-код</string>
+    <string name="lock_setup_hint">6 цифр</string>
+    <string name="lock_too_many">Забагато спроб. Повторіть через %1$d с</string>
+    <string name="lock_use_pin">Ввести PIN-код</string>
+    <string name="lock_wrong_pin">Неправильний PIN-код</string>
+    <string name="menu_favorite">До вибраного</string>
+    <string name="menu_unfavorite">Прибрати з вибраного</string>
+    <string name="send_disappearing">Повідомлення, що зникають</string>
+    <string name="send_schedule">Надіслати пізніше</string>
+    <string name="send_schedule_done">Повідомлення буде надіслано у вибраний час</string>
+    <string name="send_schedule_past">Виберіть час у майбутньому</string>
+    <string name="session_terminate_confirm">Завершити сеанс на цьому пристрої?</string>
+    <string name="sticker_gif_soon">GIF — незабаром</string>
+    <string name="sticker_no_packs">Стікерпаків поки немає.\nНатисніть ＋, щоб створити свій</string>
+    <string name="sticker_tab_emoji">Емодзі</string>
+    <string name="sticker_tab_gif">GIF</string>
+    <string name="sticker_tab_stickers">Стікери</string>
+    <string name="ttl_day">1 день</string>
+    <string name="ttl_hour">1 година</string>
+    <string name="ttl_month">30 днів</string>
+    <string name="ttl_off">Вимкнено</string>
+    <string name="ttl_saved">Налаштування збережено</string>
+    <string name="ttl_week">1 тиждень</string>
+</resources>
